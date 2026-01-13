@@ -85,7 +85,7 @@ export default function Features() {
                   </li>
                 </ul>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed font-medium">
-                  You stay in control — not Big Tech.
+                  You stay in control — your email provider or any mail server in between cannot read your emails.
                 </p>
               </div>
             </AnimateOnScroll>

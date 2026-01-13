@@ -23,9 +23,9 @@ export default function Hero() {
           <AnimateOnScroll animation="fadeInUp" delay={100}>
             <p className="text-sm sm:text-base md:text-base lg:text-xl text-gray-600 leading-relaxed font-normal max-w-xl md:max-w-lg lg:max-w-xl mx-auto md:mx-0 lg:mx-0 px-2 md:px-0">
               Keep using your existing @gmail.com, @outlook.com, or @hotmail.com email with full end-to-end encryption, offline access, and AI-powered privacy tools.
-              {/* <span className="block mt-2 sm:mt-3 md:mt-4 lg:mt-3 text-xs sm:text-sm md:text-base lg:text-base font-medium text-gray-700">
-                Your emails stay on your device only — our servers are never involved. Encrypted emails remain encrypted even for Google and Microsoft.
-              </span> */}
+              <span className="block mt-2 sm:mt-3 md:mt-4 lg:mt-3 text-xs sm:text-sm md:text-base lg:text-base font-medium text-gray-700">
+                Your emails stay on your device only — our servers are never involved. With scomm.ai, your email provider or any mail server in between cannot read your emails.
+              </span>
             </p>
           </AnimateOnScroll>
 
