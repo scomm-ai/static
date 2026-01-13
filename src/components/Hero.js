@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Hero Content - Two Column Layout */}
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center py-4 sm:py-6 md:pt-4 md:pb-0 lg:py-0">
         {/* Left Column - Text Content */}
-        <div className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 text-center md:text-left lg:text-left">
+        <div className="space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-6 text-center md:text-left lg:text-left">
           {/* Main Headline */}
           <AnimateOnScroll animation="fadeInUp" delay={0}>
             <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold leading-tight tracking-tight px-2 md:px-0">
@@ -23,15 +23,16 @@ export default function Hero() {
           <AnimateOnScroll animation="fadeInUp" delay={100}>
             <p className="text-sm sm:text-base md:text-base lg:text-xl text-gray-600 leading-relaxed font-normal max-w-xl md:max-w-lg lg:max-w-xl mx-auto md:mx-0 lg:mx-0 px-2 md:px-0">
               Keep using your existing @gmail.com, @outlook.com, or @hotmail.com email with full end-to-end encryption, offline access, and AI-powered privacy tools.
-              <span className="block mt-2 sm:mt-3 md:mt-4 lg:mt-3 text-xs sm:text-sm md:text-base lg:text-base font-medium text-gray-700">
-                Your emails stay on your device only — our servers are never involved. With scomm.ai, your email provider or any mail server in between cannot read your emails.
-              </span>
+              {/* <span className="block mt-2 sm:mt-3 md:mt-4 lg:mt-3 text-xs sm:text-sm md:text-base lg:text-base font-medium text-gray-700">
+              With scomm.ai, your email provider or any mail server in between cannot read your emails.
+              </span> */}
+              {/*    Your emails stay on your device only — our servers are never involved. */}
             </p>
           </AnimateOnScroll>
 
           {/* CTA Section */}
           <AnimateOnScroll animation="fadeInUp" delay={200}>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-4 pt-2 sm:pt-4 md:pt-6 lg:pt-4 max-w-md md:max-w-lg mx-auto md:mx-0 lg:mx-0 px-2 md:px-0">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-4 pt-2 sm:pt-4 md:pt-6 lg:pt-2 max-w-md md:max-w-lg mx-auto md:mx-0 lg:mx-0 px-2 md:px-0">
               <div className="flex-1 w-full">
                 <input
                   type="email"
