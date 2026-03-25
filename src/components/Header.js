@@ -3,10 +3,41 @@
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 
+const RESOURCES_LINKS = [
+  { label: "Documentation", href: "/resources/documentation" },
+  { label: "Guides & Tutorials", href: "/resources/guides-and-tutorials" },
+  { label: "Downloads & Tools", href: "/resources/downloads-and-tools" },
+  { label: "Support & Community", href: "/resources/support-and-community" },
+];
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isResourcesOpen, setIsResourcesOpen] = useState(false);
+  const [isResourcesDropdownOpen, setIsResourcesDropdownOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const headerRef = useRef(null);
+  const resourcesDropdownTimeoutRef = useRef(null);
+
+  const openResourcesDropdown = () => {
+    if (resourcesDropdownTimeoutRef.current) {
+      clearTimeout(resourcesDropdownTimeoutRef.current);
+      resourcesDropdownTimeoutRef.current = null;
+    }
+    setIsResourcesDropdownOpen(true);
+  };
+
+  const closeResourcesDropdown = () => {
+    resourcesDropdownTimeoutRef.current = setTimeout(() => {
+      setIsResourcesDropdownOpen(false);
+    }, 100);
+  };
+
+  const cancelCloseResourcesDropdown = () => {
+    if (resourcesDropdownTimeoutRef.current) {
+      clearTimeout(resourcesDropdownTimeoutRef.current);
+      resourcesDropdownTimeoutRef.current = null;
+    }
+  };
 
   useEffect(() => {
     setIsVisible(true);
@@ -30,6 +61,13 @@ export default function Header() {
       document.removeEventListener('touchstart', handleClickOutside);
     };
   }, [isMenuOpen]);
+
+  // Clean up resources dropdown timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (resourcesDropdownTimeoutRef.current) clearTimeout(resourcesDropdownTimeoutRef.current);
+    };
+  }, []);
 
   return (
     <header ref={headerRef} className={`fixed top-0 left-0 right-0 z-20 w-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 lg:py-5 bg-[#F5F9FA] ${isVisible ? 'animate-fade-in-down' : 'opacity-0'}`}>
@@ -58,6 +96,46 @@ export default function Header() {
           <Link href="/add-ons" className="text-gray-700 hover:text-gray-900 font-medium text-sm lg:text-base transition-smooth">
             Add-Ons
           </Link>
+          {/* Resources dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={openResourcesDropdown}
+            onMouseLeave={closeResourcesDropdown}
+          >
+            <button
+              type="button"
+              className="text-gray-700 hover:text-gray-900 font-medium text-sm lg:text-base transition-smooth flex items-center gap-1"
+              aria-expanded={isResourcesDropdownOpen}
+              aria-haspopup="true"
+            >
+              Resources
+              <svg className={`w-4 h-4 transition-transform ${isResourcesDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div
+              className={`absolute top-full left-0 pt-0.5 z-30 transition-opacity duration-200 ${isResourcesDropdownOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+              onMouseEnter={cancelCloseResourcesDropdown}
+            >
+              <div className="bg-white border border-gray-200 rounded-lg shadow-lg py-2 pt-3 min-w-[200px]">
+                {RESOURCES_LINKS.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block px-4 py-2.5 text-sm text-gray-700 hover:bg-[#2C8DA1]/10 hover:text-[#2C8DA1] transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+                <Link
+                  href="/resources"
+                  className="block px-4 py-2.5 text-sm font-medium text-[#2C8DA1] border-t border-gray-100 mt-1 pt-2 hover:bg-[#2C8DA1]/10 transition-colors"
+                >
+                  All Resources
+                </Link>
+              </div>
+            </div>
+          </div>
         </nav>
 
         {/* Desktop Action Buttons */}
@@ -130,18 +208,51 @@ export default function Header() {
             >
               Add-Ons
             </Link>
+            <div style={{ animationDelay: '0.3s' }} className="opacity-0 animate-slide-in-left-scale">
+              <button
+                type="button"
+                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                className="flex items-center justify-between w-full py-2.5 sm:py-3 px-2 sm:px-3 text-gray-700 hover:text-gray-900 font-medium text-sm sm:text-base"
+              >
+                Resources
+                <svg className={`w-5 h-5 transition-transform ${isResourcesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {isResourcesOpen && (
+                <div className="pl-4 space-y-1 border-l-2 border-[#2C8DA1]/30 ml-2">
+                  {RESOURCES_LINKS.map((item) => (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className="block py-2 px-2 text-gray-600 hover:text-[#2C8DA1] text-sm"
+                      onClick={() => { setIsMenuOpen(false); setIsResourcesOpen(false); }}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                  <Link
+                    href="/resources"
+                    className="block py-2 px-2 text-[#2C8DA1] font-medium text-sm"
+                    onClick={() => { setIsMenuOpen(false); setIsResourcesOpen(false); }}
+                  >
+                    All Resources
+                  </Link>
+                </div>
+              )}
+            </div>
             <div className="pt-3 sm:pt-4 border-t border-gray-200 space-y-2 sm:space-y-3">
               <Link 
                 href="/signin"
                 className="w-full px-3 sm:px-4 py-2.5 sm:py-3 text-gray-700 hover:text-gray-900 font-medium text-sm sm:text-base transition-all duration-300 border border-gray-300 rounded-lg hover:border-[#2C8DA1] hover:bg-[#2C8DA1]/5 transform transition-smooth hover:scale-[1.02] active:scale-[0.98] opacity-0 animate-slide-in-up-scale inline-block text-center"
-                style={{ animationDelay: '0.3s' }}
+                style={{ animationDelay: '0.35s' }}
               >
                 Sign in
               </Link>
               <Link 
                 href="/signup"
                 className="w-full px-3 sm:px-4 py-2.5 sm:py-3 bg-[#2A8E9C] hover:bg-[#237a87] text-white font-semibold text-sm sm:text-base rounded-lg transition-all duration-300 transform transition-smooth hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg opacity-0 animate-slide-in-up-scale inline-block text-center"
-                style={{ animationDelay: '0.35s' }}
+                style={{ animationDelay: '0.4s' }}
               >
                 Sign Up
               </Link>

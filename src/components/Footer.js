@@ -42,6 +42,11 @@ export default function Footer() {
                     Download Apps
                   </Link>
                 </li>
+                <li>
+                  <Link href="/resources" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
+                    Resources
+                  </Link>
+                </li>
               </ul>
             </div>
           </AnimateOnScroll>
