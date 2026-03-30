@@ -97,7 +97,7 @@ export default function Header() {
             Add-Ons
           </Link>
           {/* Resources dropdown */}
-          <div
+          {/* <div
             className="relative"
             onMouseEnter={openResourcesDropdown}
             onMouseLeave={closeResourcesDropdown}
@@ -135,7 +135,7 @@ export default function Header() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </nav>
 
         {/* Desktop Action Buttons */}
