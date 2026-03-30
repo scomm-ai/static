@@ -1124,7 +1124,7 @@ export default function PrivacyPolicyPage() {
               {/* Children's Privacy */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
-                  Children's Privacy
+                  Children&apos;s Privacy
                 </h2>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Age Restriction:</p>
@@ -1265,7 +1265,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold text-gray-900">CCPA Rights:</span> See the "YOUR PRIVACY RIGHTS" section for how to exercise your rights.
+                  <span className="font-semibold text-gray-900">CCPA Rights:</span> See the &quot;YOUR PRIVACY RIGHTS&quot; section for how to exercise your rights.
                 </p>
               </div>
 
