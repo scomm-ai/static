@@ -33,10 +33,17 @@ export default function PrivacyPolicyPage() {
                   Introduction
                 </h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  {`This Privacy Policy explains how scomm.ai ("Company," "we," "us," or "our") collects, uses, discloses, and protects personal information when you use the scomm.ai website (https://scomm.ai).`}
+                  {`This Privacy Policy explains how scomm.ai ("Company," "we," "us," or "our") collects, uses, discloses, and protects personal information when you use:`}
                 </p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>The scomm.ai website (https://scomm.ai)</li>
+                  <li>Desktop applications and software programs</li>
+                  <li>Mobile applications (iOS and Android)</li>
+                  <li>Add-ons and paid features</li>
+                  <li>Related services and applications</li>
+                </ul>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  {`By using our website, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use our website.`}
+                  {`By using our website and services, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree with this policy, please do not use our website and services.`}
                 </p>
               </div>
 
@@ -67,7 +74,7 @@ export default function PrivacyPolicyPage() {
                   Website: https://scomm.ai
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  For data protection purposes, we act as a Data Controller for personal information collected through our website.
+                  For data protection purposes, we act as a Data Controller for personal information collected through our website, applications and services.
                 </p>
               </div>
 
@@ -148,7 +155,7 @@ export default function PrivacyPolicyPage() {
                   <li>IP address</li>
                   <li>Browser type and version</li>
                   <li>Device type and identifiers</li>
-                  <li>Operating system</li>
+                  <li>Operating system (Windows, macOS, Linux, iOS, Android)</li>
                   <li>Screen resolution</li>
                   <li>Language preferences</li>
                 </ul>
@@ -156,6 +163,7 @@ export default function PrivacyPolicyPage() {
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Usage Information:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Pages visited and features used</li>
+                  <li>Interactions with our services</li>
                   <li>Time and date of visits</li>
                   <li>Referring website or source</li>
                   <li>Click-through and navigation paths</li>
@@ -182,7 +190,45 @@ export default function PrivacyPolicyPage() {
                   <li>This is an HTTPS GET request</li>
                   <li className="font-bold">No customer data, personal information, or identifiable information is transmitted in these requests</li>
                   <li>Only the application&apos;s current version number is compared against the latest available version</li>
+                  <li>No logs of individual user update checks are maintained</li>
                 </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                  Extension & Security Processing - IMPORTANT PRIVACY PROTECTIONS
+                </h3>
+                
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We DO NOT Collect Or Access:</p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">We want to be absolutely clear about what we DO NOT do:</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>We DO NOT have access to your emails or their content</li>
+                  <li>We DO NOT read, store, or process email headers, metadata, subject lines, or sender information</li>
+                  <li>We DO NOT access your email accounts on Gmail, Microsoft, or any other email service</li>
+                  <li>We DO NOT store emails on our servers</li>
+                  <li>We DO NOT transmit email data to our servers</li>
+                  <li>We DO NOT track your email communications</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed font-semibold mb-6">
+                  Your emails remain stored exclusively on your email service provider (Gmail, Microsoft, etc.) and are never transmitted to or stored on scomm.ai servers.
+                </p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">How Our Services Work:</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li><span className="font-semibold">Client-Side Processing Only:</span> All spam filtering, phishing detection, and AI-powered search operate entirely on your own device. No email content, metadata, or identifiable information is sent to our servers. Processing happens locally on your device using anonymous, non-traceable methods.</li>
+                  <li><span className="font-semibold">Platform-Specific Processing:</span> Desktop and Mobile Applications process core operations on your device. Web Application uses the browser for client-side email processing.</li>
+                  <li><span className="font-semibold">Anonymous Threat Detection:</span> Our security features may use anonymous, aggregated threat intelligence data that cannot be traced back to individual users. Pattern matching occurs on your device.</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We Actually Store:</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Public cryptographic keys (for encryption of emails on your device)</li>
+                  <li>Billing and payment information</li>
+                  <li>Account signup details (name, email, encrypted password)</li>
+                  <li>Service preferences and settings</li>
+                  <li>Authentication tokens (for secure access to paid features)</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 italic leading-relaxed mb-6">
+                  Note: Private keys are the user&apos;s responsibility and are not stored on our servers. We employ a privacy-by-design approach where your email data never leaves your device and never reaches our servers.
+                </p>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
                    Information from Third Parties
@@ -210,8 +256,9 @@ export default function PrivacyPolicyPage() {
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Service Delivery and Management:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Provide, maintain, and improve our website services</li>
+                  <li>Provide, maintain, and improve our services across all platforms web, services and applications (desktop, mobile)</li>
                   <li>Process transactions and send transaction notifications</li>
+                  <li>Deliver purchased add-ons and premium features</li>
                   <li>Manage your account and preferences</li>
                   <li>Provide customer support and respond to inquiries</li>
                   <li>Authenticate users and maintain account security</li>
@@ -249,6 +296,14 @@ export default function PrivacyPolicyPage() {
                   <li>Conduct research and development</li>
                   <li>Test new features and improvements</li>
                   <li>Generate aggregated statistical information</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Security (Client-Side Only):</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Enable local spam and phishing detection on your device</li>
+                  <li>Provide AI-powered search capabilities on your device</li>
+                  <li>Maintain encrypted authentication credentials</li>
+                  <li>All security processing occurs on your device without data transmission to our servers</li>
                 </ul>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Legal Compliance:</p>
@@ -553,9 +608,21 @@ export default function PrivacyPolicyPage() {
                   <li>Social media platforms (sharing features)</li>
                   <li className="font-bold">Third-party identity providers (for SSO authentication)</li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
                   These third parties operate under their own privacy policies.
                 </p>
+
+                {/* <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                   Application-Specific Storage
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+                  Our desktop and mobile applications do not use traditional web cookies. However, they may use:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Local storage for application settings</li>
+                  <li>Secure credential managers (e.g., Windows Credential Locker, macOS Keychain) for storing authentication tokens</li>
+                  <li>In-memory session data during active use</li>
+                </ul> */}
               </div>
 
               {/* Data Retention */}
@@ -729,6 +796,10 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
                   Data Sharing And Disclosure
                 </h2>
+                
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed font-semibold mb-6">
+                  We do not sell your personal information. We may share information only in these specific circumstances:
+                </p>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
                   Service Providers
@@ -841,7 +912,7 @@ export default function PrivacyPolicyPage() {
                   Aggregate and Anonymous Data
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  We may share aggregated or anonymized data that cannot identify you:
+                  We may share aggregated or anonymized data (such as overall usage statistics or threat detection patterns) that cannot identify you or be traced back to any individual user:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Industry reports and statistics</li>
@@ -1044,9 +1115,9 @@ export default function PrivacyPolicyPage() {
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Special Note on Cryptographic Data:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
-                  <li>We can provide your public keys and encrypted private key backups</li>
-                  <li>We <span className="font-bold"> cannot </span> decrypt your private key backups (you control the encryption password)</li>
-                  <li>We can delete all cryptographic data upon request</li>
+                  <li>We cannot provide access to, correct, or delete unencrypted private keys or decrypted email content, as we do not possess them</li>
+                  <li>Encrypted private key backups can only be deleted, not accessed or corrected. You control the encryption password</li>
+                  <li>We can provide or delete your stored public keys upon request</li>
                 </ul>
               </div>
 
@@ -1058,8 +1129,8 @@ export default function PrivacyPolicyPage() {
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Age Restriction:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Our website is not intended for children under 13 (16 in EU)</li>
-                  <li>We do not knowingly collect information from children</li>
+                  <li>Our website, applications, and services are not directed to children under 16</li>
+                  <li>We do not knowingly collect personal information from children under 16</li>
                 </ul>
 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
@@ -1083,6 +1154,41 @@ export default function PrivacyPolicyPage() {
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
                   <li>You believe a child has provided information</li>
                   <li>You are a parent seeking to exercise rights</li>
+                </ul>
+              </div>
+
+              {/* Email Service Providers */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
+                  Email Service Providers (Gmail, Microsoft, etc.)
+                </h2>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+                  Our applications integrate with third-party email services using OAuth or similar modern authentication:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>We do not store your email provider passwords</li>
+                  <li>You manage access through your email provider&apos;s security settings</li>
+                  <li>You can revoke our application&apos;s access at any time through your Google Workspace, Microsoft 365, or other provider&apos;s account settings</li>
+                  <li>Our use of information received from Google APIs will adhere to the Google API Services User Data Policy, including the Limited Use requirements</li>
+                </ul>
+              </div>
+
+              {/* Platform-Specific Information */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
+                  Platform-Specific Information
+                </h2>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Desktop Applications (Windows, macOS, Linux):</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Data is stored in user-specific application directories</li>
+                  <li>Updates are downloaded securely via HTTPS</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Mobile Applications (iOS, Android):</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Data is stored in sandboxed application containers</li>
+                  <li>Diagnostic crash reporting may be handled by platform-specific tools (e.g., Apple CrashReporter) unless you opt out in device settings</li>
                 </ul>
               </div>
 
@@ -1119,19 +1225,47 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
                   California Privacy Disclosures
                 </h2>
-
+                
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold text-gray-900">California Shine the Light Law:</span> California residents may request information about sharing personal information with third parties for direct marketing purposes.
+                  This section applies exclusively to California residents.
                 </p>
 
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Our Disclosure:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We do not share personal information with third parties for their direct marketing</li>
-                  <li>You may still request this information annually</li>
-                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                  Notice of Collection
+                </h3>
 
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Categories of Personal Information Collected:</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Identifiers (name, email, IP address)</li>
+                  <li>Commercial information (transaction data)</li>
+                  <li>Internet activity (application/website usage data)</li>
+                  <li>Sensory data (none)</li>
+                  <li>Inferences (none)</li>
+                </ul>
+                
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold text-gray-900">CCPA Rights:</span> See Section 13.3 for California-specific rights.
+                  <span className="font-semibold text-gray-900">Sources:</span> Directly from you, automatically through our applications and website, and from payment processors.
+                </p>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
+                  <span className="font-semibold text-gray-900">Business Purposes:</span> Providing services, processing payments, and ensuring security.
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                  No Sale of Personal Information
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
+                  We do not sell personal information, and we have not sold personal information in the preceding 12 months. We do not share personal information for cross-context behavioral advertising.
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
+                  California &quot;Shine the Light&quot; Law
+                </h3>
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
+                  We do not share your personal information with third parties for their own direct marketing purposes.
+                </p>
+                
+                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
+                  <span className="font-semibold text-gray-900">CCPA Rights:</span> See the "YOUR PRIVACY RIGHTS" section for how to exercise your rights.
                 </p>
               </div>
 
@@ -1299,7 +1433,7 @@ export default function PrivacyPolicyPage() {
                   We encourage you to review this Privacy Policy periodically.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  Continued use of our website after changes become effective constitutes acceptance of the updated policy.
+                  Continued use of our applications or services after changes become effective constitutes acceptance of the updated policy.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   If you do not agree with changes, you should discontinue use and may request deletion of your account.
@@ -1415,8 +1549,8 @@ export default function PrivacyPolicyPage() {
                 <ul className="list-none space-y-2 text-sm sm:text-base text-gray-700 mb-6">
                   <li>✓ Account information (name, email, encrypted password)</li>
                   <li>✓ Billing information (for purchases)</li>
-                  <li>✓ Website usage data (pages visited on scomm.ai)</li>
-                  <li>✓ Technical information (IP address, browser type)</li>
+                  <li>✓ Application and website usage data (pages visited, features used)</li>
+                  <li>✓ Technical information (IP address, browser type, device info)</li>
                   <li>✓ Public cryptographic keys (for email encryption)</li>
                   <li>✓ Optionally: Encrypted private key backups (encrypted with YOUR password using AES-256-GCM)</li>
                   <li>✓ Authentication tokens (for secure access to paid features)</li>
@@ -1455,10 +1589,10 @@ export default function PrivacyPolicyPage() {
                   ACKNOWLEDGMENT
                 </h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  By using the scomm.ai website, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+                  By using scomm.ai website, applications and services, you acknowledge that you have read, understood, and agree to this Privacy Policy.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
-                  If you do not agree with this policy, please do not use our website.
+                  If you do not agree with this policy, please do not use our website, applications or services.
                 </p>
                 
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
