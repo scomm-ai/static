@@ -1555,142 +1555,187 @@ export default function PrivacyPolicyPage() {
 
               {/* Information We Collect */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Information We Collect</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">2. INFORMATION WE COLLECT</h2>
 
+                {/* 2.1 */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Information You Provide Directly</h3>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Account Information:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <p className="text-sm sm:text-base text-gray-700 mb-3">When you interact with our services, we may collect:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Account Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Name</li>
                   <li>Email address</li>
                   <li>Account credentials (username and encrypted password)</li>
                   <li>Profile information</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Payment and Billing Information:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Payment and Billing Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Billing name and address</li>
                   <li>Payment method details (processed by third-party payment processors)</li>
-                  <li>Transaction history and invoice information</li>
+                  <li>Transaction history</li>
+                  <li>Invoice information</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Communications:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Communications:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Support inquiries and help requests</li>
                   <li>Feedback and survey responses</li>
+                  <li>Email correspondence with our team</li>
                   <li>Any other information you choose to provide</li>
                 </ul>
 
+                {/* 2.2 */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Automatically Collected Information</h3>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Technical Information:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <p className="text-sm sm:text-base text-gray-700 mb-3">When you use our services, we automatically collect:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Technical Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>IP address</li>
+                  <li>Browser type and version</li>
                   <li>Device type and identifiers</li>
                   <li>Operating system (Windows, macOS, Linux, iOS, Android)</li>
-                  <li>Application version</li>
+                  <li>Screen resolution</li>
                   <li>Language preferences</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Usage Information:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Features used within the application</li>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Usage Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Features used</li>
                   <li>Time and date of usage</li>
-                  <li>Error logs and diagnostic information</li>
                   <li>Interactions with our services</li>
+                  <li>Error logs and diagnostic information</li>
                 </ul>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Application Version Information</h3>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">When our desktop or mobile applications check for updates:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Tracking Technologies:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Cookies and similar technologies</li>
+                  <li>Session identifiers</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Application Version Information:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">When our desktop or mobile applications check for updates:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Version checking requests are sent to https://scomm-ai.github.io/version/index.json</li>
                   <li>This is an HTTPS GET request</li>
-                  <li className="font-bold">No customer data, personal information, or identifiable information is transmitted in these requests</li>
+                  <li className="font-semibold">No customer data, personal information, or identifiable information is transmitted in these requests</li>
                   <li>Only the application&apos;s current version number is compared against the latest available version</li>
                   <li>No logs of individual user update checks are maintained</li>
                 </ul>
 
+                {/* 2.3 */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Extension &amp; Security Processing — IMPORTANT PRIVACY PROTECTIONS</h3>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We DO NOT Collect Or Access:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We DO NOT have access to your emails or their content</li>
-                  <li>We DO NOT read, store, or process email headers, metadata, subject lines, or sender information</li>
-                  <li>We DO NOT access your email accounts on Gmail, Microsoft, or any other email service</li>
-                  <li>We DO NOT store emails on our servers</li>
-                  <li>We DO NOT transmit email data to our servers</li>
-                  <li>We DO NOT track your email communications</li>
+                <p className="text-sm sm:text-base font-bold text-gray-900 mb-2 uppercase tracking-wide">WHAT WE DO NOT COLLECT OR ACCESS:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-3">We want to be absolutely clear about what we DO NOT do:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We <span className="font-bold">DO NOT</span> have access to your emails or their content</li>
+                  <li>We <span className="font-bold">DO NOT</span> read, store, or process email headers, metadata, subject lines, or sender information</li>
+                  <li>We <span className="font-bold">DO NOT</span> access your email accounts on Gmail, Microsoft, or any other email service</li>
+                  <li>We <span className="font-bold">DO NOT</span> store emails on our servers</li>
+                  <li>We <span className="font-bold">DO NOT</span> transmit email data to our servers</li>
+                  <li>We <span className="font-bold">DO NOT</span> track your email communications</li>
                 </ul>
                 <p className="text-sm sm:text-base text-gray-700 font-semibold leading-relaxed mb-6">
                   Your emails remain stored exclusively on your email service provider (Gmail, Microsoft, etc.) and are never transmitted to or stored on scomm.ai servers.
                 </p>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">How Our Applications Work:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li><span className="font-semibold">Client-Side Processing Only:</span> All spam filtering, phishing detection, and AI-powered search operate entirely on your own device. No email content, metadata, or identifiable information is sent to our servers.</li>
-                  <li><span className="font-semibold">Platform-Specific Processing:</span> Desktop and Mobile Applications process core operations on your device.</li>
-                  <li><span className="font-semibold">Anonymous Threat Detection:</span> Our security features may use anonymous, aggregated threat intelligence data that cannot be traced back to individual users. Pattern matching occurs on your device.</li>
+                <p className="text-sm sm:text-base font-bold text-gray-900 mb-2 uppercase tracking-wide">HOW OUR SERVICES WORK:</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Client-Side Processing Only:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Our applications operate with a privacy-by-design, client-side architecture:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>All spam filtering, phishing detection, and AI-powered search operate entirely on your own device (client-side)</li>
+                  <li>No email content, metadata, or identifiable information is sent to our servers</li>
+                  <li>Processing happens locally on your device using anonymous, non-traceable methods</li>
+                  <li>Search and filtering results remain on your device</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We Actually Store on Our Servers:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Platform-Specific Processing:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li><span className="font-semibold">Desktop Applications (Windows, macOS, Linux):</span> All core processing occurs on your desktop device</li>
+                  <li><span className="font-semibold">Mobile Applications (iOS, Android):</span> All core processing occurs on your mobile device</li>
+                  <li><span className="font-semibold">Web Application:</span> User login and authentication occur through the web application, but email processing remains client-side</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Anonymous Threat Detection:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Our security features may use anonymous, aggregated threat intelligence data that cannot be traced back to individual users</li>
+                  <li>Pattern matching and threat detection occur on your device without transmitting personal data</li>
+                  <li>Any threat intelligence shared is fully anonymized and does not contain user-identifiable information</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">What We Actually Store:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
                   <li>Public cryptographic keys (for encryption of emails on your device)</li>
                   <li>Billing and payment information</li>
                   <li>Account signup details (name, email, encrypted password)</li>
                   <li>Service preferences and settings</li>
                   <li>Authentication tokens (for secure access to paid features)</li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-700 italic leading-relaxed mb-6">
-                  Note: Private keys are the user&apos;s responsibility and are not stored on our servers. We employ a privacy-by-design approach where your email data never leaves your device.
+                <p className="text-sm sm:text-base text-gray-600 italic mb-6">
+                  <span className="font-semibold not-italic text-gray-800">Note:</span> Private keys are the user&apos;s responsibility and are not stored on our servers. We employ a privacy-by-design approach where your email data never leaves your device and never reaches our servers.
                 </p>
 
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Information from Third Parties</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
-                  <li>Payment processors (transaction confirmations)</li>
-                  <li>Analytics providers (aggregated usage statistics)</li>
-                  <li className="font-bold">Third-party identity providers (Google, Microsoft, etc.) when you use Single Sign-On (SSO) for authentication</li>
-                </ul>
-              </div>
-
-              {/* Cryptographic Key Management */}
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Cryptographic Key Management</h2>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Public Key Storage</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We store <span className="font-bold">public cryptographic keys</span> on our servers associated with each email address</li>
+                {/* 2.4 */}
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Cryptographic Key Management</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Public Key Storage:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We store public cryptographic keys on our servers associated with each email address</li>
                   <li>Public keys are used to enable encrypted communication</li>
                   <li>Public keys do not allow us to decrypt or read your encrypted content</li>
                 </ul>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Private Key Storage — User Control</h3>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Default (Recommended):</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Your <span className="font-bold">private cryptographic keys remain exclusively on your client device</span> (desktop, iOS, or mobile)</li>
-                  <li>We <span className="font-bold">never</span> have access to unencrypted private keys</li>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Private Key Storage — User Control:</p>
+                <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Default (Recommended):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
+                  <li>Your private cryptographic keys remain exclusively on your client device (desktop, mobile)</li>
+                  <li>We never have access to unencrypted private keys</li>
                   <li>You are solely responsible for backing up and securing your private keys</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Optional Cloud Backup (User Choice):</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>You may <span className="font-bold">optionally</span> upload a symmetrically encrypted copy of your private key to our servers</li>
-                  <li>Encryption uses <span className="font-bold">AES-256-GCM algorithm</span> (industry-standard encryption)</li>
-                  <li><span className="font-bold">You choose the encryption password</span> — we do not have access to this password</li>
-                  <li><span className="font-bold">We cannot decrypt your private key</span> without your password</li>
+                <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Optional Cloud Backup (User Choice):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
+                  <li>You may optionally upload a symmetrically encrypted copy of your private key to our servers</li>
+                  <li>Encryption uses AES-256-GCM algorithm (industry-standard encryption)</li>
+                  <li>You choose the encryption password — we do not have access to this password</li>
+                  <li>We cannot decrypt your private key without your password</li>
+                  <li>This encrypted backup allows you to restore your private key on new devices using your password</li>
                   <li>You can delete this encrypted backup at any time</li>
                 </ul>
-              </div>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Important Security Note:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>We employ a zero-knowledge architecture for private keys</li>
+                  <li>Whether stored locally or as an encrypted backup, we cannot access your unencrypted private keys</li>
+                  <li>If you lose your password for the encrypted backup, we cannot recover your private key</li>
+                </ul>
 
-              {/* Authentication and Token Management */}
-              <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Authentication And Token Management</h2>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Single Sign-On (SSO) Authentication</h3>
-                <ul className="list-disc list-outside ml-5 sm:ml-6 space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We support <span className="font-bold">Single Sign-On (SSO)</span> through Google, Microsoft, and other third-party identity providers</li>
-                  <li>Upon successful SSO authentication, the identity provider confirms your identity</li>
-                  <li>We receive minimal information from the identity provider (typically email address and authentication confirmation)</li>
+                {/* 2.5 */}
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Authentication and Single Sign-On (SSO)</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">For commercial add-ons and paid features:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We support Single Sign-On (SSO) through external identity providers including: Google, Microsoft, and other third-party identity providers.</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">What We Receive from Identity Providers:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Email address (for account matching)</li>
+                  <li>Authentication confirmation</li>
+                  <li>We do <span className="font-bold">NOT</span> receive: Browsing history, Email content or access, Contacts, files, or other personal data from your SSO account</li>
                 </ul>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Token-Based Access</h3>
-                <ul className="list-disc list-outside ml-5 sm:ml-6 space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We issue our own <span className="font-bold">long-term refresh token</span> and <span className="font-bold">access token</span></li>
-                  <li>These tokens verify your subscription status and provide access to paid features</li>
-                  <li><span className="font-bold">No additional personal information (PII) is transmitted</span> beyond what is necessary for authentication</li>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Token-Based Access:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">After successful SSO authentication:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We issue our own long-term refresh token and access token</li>
+                  <li>These tokens are used to: verify your subscription status, access paid features, retrieve billing information from our billing server (auth.scomm.ai)</li>
+                  <li>No other personally identifiable information (PII) is transmitted beyond what is necessary for authentication</li>
                 </ul>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">What We Do NOT Collect During Authentication</h3>
-                <ul className="list-disc list-outside ml-5 sm:ml-6 space-y-2 text-sm sm:text-base text-gray-700">
-                  <li>We do <span className="font-bold">not</span> collect browsing history from identity providers</li>
-                  <li>We do <span className="font-bold">not</span> access your email content through SSO providers</li>
-                  <li>We do <span className="font-bold">not</span> collect contacts, files, or other personal data from your SSO account</li>
-                  <li>We only receive authentication confirmation and the email address associated with your account</li>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Token Refresh Process:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Access tokens are short-lived for security</li>
+                  <li>Your application sends the refresh token to auth.scomm.ai</li>
+                  <li>Our authentication server verifies the refresh token</li>
+                  <li>A new access token is issued, signed by our well-known authentication public key</li>
+                  <li>No additional personal information is transmitted during token refresh</li>
+                </ul>
+
+                {/* 2.6 */}
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Information from Third Parties</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We may receive information about you from:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Payment processors (transaction confirmations)</li>
+                  <li>Analytics providers (aggregated usage statistics)</li>
+                  <li>Public databases (for fraud prevention)</li>
+                  <li>Third-party identity providers (Google, Microsoft, etc.) when you use Single Sign-On (SSO) for authentication</li>
                 </ul>
               </div>
 
@@ -1740,303 +1785,852 @@ export default function PrivacyPolicyPage() {
                 </ul>
               </div>
 
-              {/* How We Use Information */}
+              {/* 3. HOW WE USE YOUR INFORMATION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">How We Use Your Information</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Service Delivery:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Provide, maintain, and improve our desktop and mobile applications</li>
-                  <li>Process transactions and deliver purchased add-ons and premium features</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> HOW WE USE YOUR INFORMATION</h2>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We use the information we collect for the following purposes:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Service Delivery and Management:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Provide, maintain, and improve our services across all platforms (desktop, mobile)</li>
+                  <li>Process transactions and send transaction notifications</li>
+                  <li>Deliver purchased add-ons and premium features</li>
                   <li>Manage your account and preferences</li>
-                  <li>Authenticate users and manage access tokens</li>
+                  <li>Provide customer support and respond to inquiries</li>
+                  <li>Authenticate users and maintain account security</li>
+                  <li>Issue and manage authentication tokens (refresh tokens and access tokens) for secure access to paid features</li>
                   <li>Verify subscription status and deliver paid add-on features</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Communications:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Payment Processing:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Process payments and subscription billing</li>
+                  <li>Generate invoices and transaction records</li>
+                  <li>Prevent payment fraud</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Communications:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Send service-related announcements and updates</li>
                   <li>Respond to support requests</li>
                   <li>Send marketing communications (with your consent where required)</li>
-                  <li className="font-bold">Notify you of application version updates and security patches</li>
-                  <li className="font-bold">Send authentication and token-related alerts</li>
+                  <li>Notify you of changes to our services or policies</li>
+                  <li>Notify you of application version updates and security patches</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Security (Client-Side Only):</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Analytics and Improvement:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Analyze usage patterns and trends (aggregated data only)</li>
+                  <li>Conduct research and development</li>
+                  <li>Test new features and improvements</li>
+                  <li>Generate aggregated statistical information</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Security (Client-Side Only):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Enable local spam and phishing detection on your device</li>
                   <li>Provide AI-powered search capabilities on your device</li>
+                  <li>Maintain encrypted authentication credentials</li>
                   <li>All security processing occurs on your device without data transmission to our servers</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Legal Compliance:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Legal Compliance:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
                   <li>Comply with applicable laws and regulations</li>
                   <li>Respond to legal requests and prevent harm</li>
                   <li>Protect our rights and property</li>
+                  <li>Enforce our agreements</li>
                 </ul>
               </div>
 
-              {/* Legal Basis */}
+              {/* 4. LEGAL BASIS FOR PROCESSING */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Legal Basis For Processing (PIPEDA &amp; GDPR)</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Consent:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> LEGAL BASIS FOR PROCESSING (PIPEDA &amp; GDPR COMPLIANCE)</h2>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We process personal information on the following legal bases:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Consent:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Where you have given clear consent for specific processing activities</li>
                   <li>Marketing communications (you may withdraw consent at any time)</li>
-                  <li className="font-bold">Optional encrypted private key cloud backup (you choose to enable this feature)</li>
+                  <li>Optional cookies and tracking (beyond essential cookies)</li>
+                  <li>Optional encrypted private key cloud backup (you choose to enable this feature)</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Contractual Necessity:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Contractual Necessity:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>To perform our contract with you (provide services you requested)</li>
                   <li>To process payments and deliver purchased products</li>
-                  <li className="font-bold">To authenticate users and provide secure access to paid features</li>
-                  <li className="font-bold">To issue and manage authentication tokens</li>
+                  <li>To manage your account and fulfill our obligations</li>
+                  <li>To authenticate users and provide secure access to paid features</li>
+                  <li>To issue and manage authentication tokens</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Legitimate Interests:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Legitimate Interests:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Service improvement and development</li>
                   <li>Fraud prevention in payment processing</li>
-                  <li className="font-bold">Providing version update notifications for security and functionality</li>
+                  <li>Network and information security</li>
+                  <li>Direct marketing to existing customers (where permitted)</li>
+                  <li>Providing version update notifications for security and functionality</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Legal Obligation:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Legal Obligation:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
                   <li>Compliance with tax and accounting requirements</li>
                   <li>Response to legal processes and government requests</li>
+                  <li>Prevention of fraud and criminal activity</li>
                 </ul>
               </div>
 
-              {/* Data Retention */}
+              {/* 5. COOKIES & TRACKING TECHNOLOGIES */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Data Retention</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Account Information:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> COOKIES &amp; TRACKING TECHNOLOGIES</h2>
+                
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Types of Technologies We Use</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Essential Session Data:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Required for basic application functionality</li>
+                  <li>Session management and authentication</li>
+                  <li>Security features</li>
+                  <li>Authentication token management</li>
+                  <li>Cannot be disabled</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Performance Tracking:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Analytics and usage statistics</li>
+                  <li>Error tracking and diagnostics</li>
+                  <li>Feature optimization</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Functional Data:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Remember your preferences</li>
+                  <li>Personalization features</li>
+                  <li>Language and regional settings</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Management</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">You can control tracking through:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Application settings</li>
+                  <li>Device privacy controls</li>
+                  <li>Platform-specific privacy settings (iOS, Android, desktop OS)</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-600 italic mb-6">
+                  <span className="font-semibold not-italic text-gray-800">Note:</span> Disabling essential session data may impair application functionality and prevent authentication.
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Third-Party Technologies</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We may use technologies from third-party services:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-2">
+                  <li>Analytics services (usage statistics)</li>
+                  <li>Payment processors (transaction security)</li>
+                  <li>Third-party identity providers (for SSO authentication)</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">These third parties operate under their own privacy policies.</p>
+              </div>
+
+              {/* 6. DATA RETENTION */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> DATA RETENTION</h2>
+                
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Retention Periods</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We retain personal information for as long as necessary to fulfill the purposes described in this Privacy Policy:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Account Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Active accounts: Duration of account relationship</li>
                   <li>Inactive accounts: 2 years after last login</li>
                   <li>Deleted accounts: 30 days for recovery, then permanently deleted</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Cryptographic Keys:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Cryptographic Keys:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Public keys: Duration of account relationship</li>
                   <li>Encrypted private key backups: Until you delete them or close your account</li>
                   <li>Permanently deleted within 30 days of account deletion</li>
+                  <li>Private keys (local): Never stored on our servers (user responsibility)</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Authentication Tokens:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Authentication Tokens:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Refresh tokens: Until revoked or account deleted</li>
                   <li>Access tokens: Short-lived (typically hours), then automatically expired</li>
                   <li>Token logs: 90 days for security monitoring</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Version Check Logs:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Payment Information:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Transaction records: 7 years (tax and accounting requirements)</li>
+                  <li>Payment method details: Until subscription ends or updated</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Communications:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Support tickets: 3 years</li>
+                  <li>Marketing preferences: Until you unsubscribe</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Usage Data:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Analytics data: 26 months (aggregated)</li>
+                  <li>Error logs: 90 days</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Version Check Logs:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
                   <li>No personal data stored from version check requests</li>
                   <li>Anonymous version check statistics: 12 months (aggregated)</li>
                 </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Deletion and Anonymization</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">After retention periods expire:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Personal information is permanently deleted or anonymized</li>
+                  <li>Anonymized data may be retained indefinitely for statistical purposes</li>
+                  <li>Backup copies are deleted within 90 days of primary deletion</li>
+                  <li>Cryptographic keys (public and encrypted private) are permanently deleted</li>
+                  <li>Authentication tokens are immediately revoked and deleted</li>
+                </ul>
               </div>
 
-              {/* Data Security */}
+              {/* 7. DATA SECURITY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Data Security</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Technical Safeguards:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> DATA SECURITY</h2>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Security Measures</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We implement industry-standard security measures:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Technical Safeguards:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Encryption in transit (TLS/SSL for all communications)</li>
                   <li>Encryption at rest for sensitive data</li>
                   <li>Secure password hashing (bcrypt or equivalent)</li>
-                  <li className="font-bold">AES-256-GCM encryption for optional private key backups</li>
-                  <li className="font-bold">Cryptographic signing of authentication tokens</li>
-                  <li className="font-bold">Zero-knowledge architecture — we cannot access your unencrypted private keys</li>
+                  <li>AES-256-GCM encryption for optional private key backups</li>
+                  <li>Cryptographic signing of authentication tokens</li>
+                  <li>Public key cryptography for secure communications</li>
                   <li>Regular security updates and patches</li>
+                  <li>Firewall protection and intrusion detection</li>
+                  <li>Access controls and authentication</li>
+                  <li>Client-side encryption for email processing</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Authentication Security:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li><span className="font-bold">Short-lived access tokens</span> to limit exposure</li>
-                  <li><span className="font-bold">Secure token refresh mechanism</span> via auth.scomm.ai</li>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Organizational Safeguards:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Employee confidentiality agreements</li>
+                  <li>Access limited to authorized personnel</li>
+                  <li>Regular security training</li>
+                  <li>Incident response procedures</li>
+                  <li>Third-party security audits</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Payment Security:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>PCI DSS compliance for payment processing</li>
+                  <li>Tokenization of payment data</li>
+                  <li>No storage of full credit card numbers</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Authentication Security:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Short-lived access tokens to limit exposure</li>
+                  <li>Secure token refresh mechanism via auth.scomm.ai</li>
+                  <li>Well-known public key infrastructure for token verification</li>
                   <li>Protection against token theft and replay attacks</li>
                 </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Privacy-by-Design Architecture:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Email processing occurs entirely on your device</li>
+                  <li>No email content transmitted to our servers</li>
+                  <li>End-to-end encryption for sensitive operations</li>
+                  <li>Zero-knowledge architecture for email data and private keys</li>
+                  <li>Client-side processing across all platforms (desktop, mobile)</li>
+                </ul>
+
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Data Breach Notification</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
+                <p className="text-sm sm:text-base text-gray-700 mb-2">In the event of a data breach:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
                   <li>We will notify affected users within 72 hours</li>
+                  <li>Notification includes nature of breach and steps taken</li>
                   <li>We will notify relevant authorities as required by law</li>
-                  <li className="font-bold">For cryptographic key compromises, we will provide immediate guidance on key rotation</li>
+                  <li>We will provide guidance on protective measures</li>
+                  <li>For cryptographic key compromises, we will provide immediate guidance on key rotation</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Limitations</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">While we employ robust security measures:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>No system is 100% secure</li>
+                  <li>Internet transmission carries inherent risks</li>
+                  <li>You are responsible for protecting your account credentials and private keys</li>
+                  <li>You are responsible for protecting your private key encryption password (if using cloud backup)</li>
+                  <li>Loss of your private key encryption password means permanent loss of access to encrypted data</li>
+                  <li>Report suspicious activity immediately</li>
                 </ul>
               </div>
 
-              {/* Data Sharing */}
+              {/* 8. DATA SHARING AND DISCLOSURE */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Data Sharing And Disclosure</h2>
-                <p className="text-sm sm:text-base text-gray-700 font-semibold leading-relaxed mb-6">
-                  We do not sell your personal information. We may share information only in these specific circumstances:
-                </p>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Payment Processors:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Stripe, PayPal, or other payment gateways — Purpose: Process transactions</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> DATA SHARING AND DISCLOSURE</h2>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Service Providers</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We share information with trusted third-party service providers:</p>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Payment Processors:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Stripe, PayPal, or other payment gateways</li>
+                  <li>Purpose: Process transactions</li>
+                  <li>Data shared: Billing information, transaction details</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Infrastructure Providers:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Cloud hosting and storage services — Data shared: Account data, public keys, encrypted private key backups</li>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Analytics Providers:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Analytics services</li>
+                  <li>Purpose: Usage analysis and service optimization</li>
+                  <li>Data shared: Anonymized usage data, IP addresses</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Third-Party Identity Providers:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Google, Microsoft, and other SSO providers — Purpose: User authentication via SSO</li>
-                  <li>Data shared: Authentication requests and email address for account matching</li>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Infrastructure Providers:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Cloud hosting and storage services</li>
+                  <li>Purpose: Host services and databases</li>
+                  <li>Data shared: Account data, public keys, encrypted private key backups (encrypted with your password), service preferences (NOT email content)</li>
                 </ul>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">What We NEVER Share</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li><span className="font-bold">Private cryptographic keys</span> (we don&apos;t have access to them)</li>
-                  <li><span className="font-bold">Private key encryption passwords</span> (you choose these, we never see them)</li>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Communication Services:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Email service providers</li>
+                  <li>Purpose: Send transactional and marketing emails</li>
+                  <li>Data shared: Email addresses, names, communication preferences</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Third-Party Identity Providers:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Google, Microsoft, and other SSO providers</li>
+                  <li>Purpose: User authentication via SSO</li>
+                  <li>Data shared: Authentication requests, email address for account matching</li>
+                </ul>
+
+                <p className="text-sm sm:text-base text-gray-700 mb-2">All service providers are contractually bound to:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Use data only for specified purposes</li>
+                  <li>Maintain confidentiality and security</li>
+                  <li>Comply with applicable privacy laws</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">What We NEVER Share:</h3>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Email content or communications</li>
-                  <li>Browsing history outside our services</li>
+                  <li>Email metadata or headers</li>
+                  <li>Private cryptographic keys (we don&apos;t have access to them)</li>
+                  <li>Private key encryption passwords (you choose these, we never see them)</li>
+                  <li>Decrypted authentication tokens from third-party providers</li>
+                  <li>Email account credentials for third-party services</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Business Transfers</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">In the event of:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-2">
+                  <li>Merger or acquisition</li>
+                  <li>Asset sale or reorganization</li>
+                  <li>Bankruptcy or insolvency</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Your personal information may be transferred to the acquiring entity. You will be notified of any such transfer, and the new entity will be bound by this Privacy Policy.</p>
+                <p className="text-sm sm:text-base text-gray-600 italic mb-6">
+                  <span className="font-semibold not-italic text-gray-800">Note:</span> Encrypted private key backups would transfer encrypted (the acquiring entity still cannot decrypt without your password).
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Legal Requirements</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We may disclose information when required to:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-2">
+                  <li>Comply with court orders or legal processes</li>
+                  <li>Respond to government requests</li>
+                  <li>Protect our rights and property</li>
+                  <li>Prevent fraud or criminal activity</li>
+                  <li>Protect safety of users or the public</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We will notify you of legal requests unless prohibited by law.</p>
+                <p className="text-sm sm:text-base text-gray-600 italic mb-6">
+                  <span className="font-semibold not-italic text-gray-800">Note:</span> We cannot disclose private keys or decrypt private key backups as we do not have access to the decryption passwords.
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Aggregate and Anonymous Data</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We may share aggregated or anonymized data that cannot identify you:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Industry reports and statistics</li>
+                  <li>Research and publications</li>
+                  <li>Threat intelligence (anonymized security patterns)</li>
+                  <li>Aggregate version adoption statistics (no user identification)</li>
                 </ul>
               </div>
 
-              {/* Your Privacy Rights */}
+              {/* 9. INTERNATIONAL DATA TRANSFERS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Your Privacy Rights</h2>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">You have the following rights depending on your jurisdiction:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Access copies of your personal information (PIPEDA, GDPR, CCPA)</li>
-                  <li>Correct inaccurate or incomplete information</li>
-                  <li>Delete your data (including public keys, encrypted private key backups, and authentication tokens)</li>
-                  <li>Export your data in machine-readable format</li>
-                  <li>Opt out of marketing communications</li>
-                  <li>Withdraw consent for processing at any time</li>
-                  <li>Lodge complaints with relevant supervisory authorities</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> INTERNATIONAL DATA TRANSFERS</h2>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Transfer Mechanisms</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">Your information may be transferred to and processed in countries other than your country of residence:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2"><span className="font-semibold text-gray-900">Primary Data Storage:</span> Canada</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Potential Transfer Locations:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>United States (cloud services)</li>
+                  <li>European Union (support services)</li>
+                  <li>Other countries where our service providers operate</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Special Note on Cryptographic Data:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>We can provide your public keys upon request</li>
-                  <li>Encrypted private key backups can only be deleted (we cannot access or correct them — you control the password)</li>
+                <p className="text-sm sm:text-base text-gray-600 italic mb-6">
+                  <span className="font-semibold not-italic text-gray-800">Note:</span> Email content is NEVER transferred anywhere as it remains on your device and your email provider&apos;s servers.
+                </p>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Safeguards</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">For transfers outside Canada/EU/UK:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Standard Contractual Clauses (EU Commission approved)</li>
+                  <li>Privacy Shield certification (where applicable)</li>
+                  <li>Adequacy decisions by relevant authorities</li>
+                  <li>Contractual commitments from recipients</li>
+                  <li>End-to-end encryption for sensitive data (private key backups remain encrypted during transfer)</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Your Rights</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">You have the right to:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Object to international transfers</li>
+                  <li>Request information about safeguards</li>
+                  <li>Obtain copies of transfer agreements</li>
+                </ul>
+              </div>
+
+              {/* 10. YOUR PRIVACY RIGHTS */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> YOUR PRIVACY RIGHTS</h2>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Rights Under PIPEDA (Canada)</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Access:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Request copies of your personal information</li>
+                  <li>Receive information about how it&apos;s used</li>
+                  <li>Request information about stored public keys and encrypted private key backups</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Correction:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Update inaccurate or incomplete information</li>
+                  <li>Request corrections to your records</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Withdrawal of Consent:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Withdraw consent for processing at any time</li>
+                  <li>May limit service availability</li>
+                  <li>Delete encrypted private key backups</li>
+                  <li>Revoke authentication tokens</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Complaint:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Lodge complaints with Privacy Commissioner of Canada</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Rights Under GDPR (EU/UK)</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Access (Article 15):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Obtain confirmation of processing</li>
+                  <li>Receive copy of your data</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Rectification (Article 16):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Correct inaccurate data</li>
+                  <li>Complete incomplete data</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Erasure (Article 17) — &quot;Right to be Forgotten&quot;:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Request deletion of your data</li>
+                  <li>Subject to legal retention requirements</li>
+                  <li>Includes deletion of public keys, encrypted private key backups, and authentication tokens</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Restriction of Processing (Article 18):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Limit how we use your data</li>
+                  <li>Applicable in specific circumstances</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Data Portability (Article 20):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Receive data in machine-readable format</li>
+                  <li>Transfer data to another provider</li>
+                  <li>Export your public keys and encrypted private key backups</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Objection (Article 21):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Object to processing based on legitimate interests</li>
+                  <li>Object to direct marketing at any time</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Automated Decision-Making (Article 22):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Right not to be subject to automated decisions</li>
+                  <li>We do not use automated decision-making</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Rights Under CCPA (California)</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Right to Know:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Categories of personal information collected</li>
+                  <li>Sources and purposes of collection</li>
+                  <li>Third parties with whom information is shared</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Right to Delete:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Request deletion of personal information</li>
+                  <li>Subject to exceptions</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Right to Opt-Out:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Opt out of sale of personal information (we do not sell data)</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Right to Non-Discrimination:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Not be discriminated against for exercising rights</li>
+                </ul>
+
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">How to Exercise Your Rights</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">To exercise any of these rights:</p>
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li><span className="font-semibold text-gray-900">Email:</span> privacy@scomm.ai</li>
+                  <li><span className="font-semibold text-gray-900">Subject Line:</span> Privacy Rights Request - [Type of Request]</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Include:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Your full name</li>
+                  <li>Email address associated with account</li>
+                  <li>Specific right you wish to exercise</li>
+                  <li>Verification information (for security)</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Response Time:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Acknowledgment within 5 business days</li>
+                  <li>Complete response within 30 days (GDPR/PIPEDA)</li>
+                  <li>45 days for CCPA requests</li>
+                  <li>Extensions communicated if needed</li>
+                </ul>
+                <ul className="list-none space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li><span className="font-semibold text-gray-900">Verification:</span> We may request additional information to verify your identity before fulfilling requests.</li>
+                  <li><span className="font-semibold text-gray-900">No Fee:</span> Requests are processed free of charge (unless manifestly unfounded or excessive).</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Special Note on Cryptographic Data:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>We can provide your public keys and encrypted private key backups</li>
+                  <li>We cannot decrypt your private key backups (you control the encryption password)</li>
                   <li>We can delete all cryptographic data upon request</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">To Exercise Your Rights:</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2"><span className="font-bold">Email:</span> privacy@scomm.ai</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2"><span className="font-bold">Subject Line:</span> Privacy Rights Request — [Type of Request]</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">We respond within 5 business days (acknowledgment) and 30 days (full response).</p>
               </div>
 
-              {/* Children */}
+              {/* 11. CHILDREN'S PRIVACY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Children&apos;s Privacy</h2>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
-                  <li>Our applications are not directed to children under 16</li>
-                  <li>We do not knowingly collect personal information from children under 16</li>
-                  <li>If we discover we have collected information from a child, we will delete it immediately</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CHILDREN&apos;S PRIVACY</h2>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Age Restriction:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Our applications and services are not intended for children under 13 (16 in EU)</li>
+                  <li>We do not knowingly collect information from children</li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Contact <strong>privacy@scomm.ai</strong> immediately if you believe a child has provided information or if you are a parent seeking to exercise rights.</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Parental Notification:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">If we discover we have collected information from a child:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We will delete it immediately</li>
+                  <li>We will notify parents/guardians if possible</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Parental Rights:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Parents may:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Request access to their child&apos;s information</li>
+                  <li>Request deletion of information</li>
+                  <li>Refuse further collection</li>
+                </ul>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Contact us immediately if:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>You believe a child has provided information</li>
+                  <li>You are a parent seeking to exercise rights</li>
+                </ul>
               </div>
 
-              {/* California Privacy */}
+              {/* 12. EMAIL SERVICE PROVIDERS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">California Privacy Disclosures</h2>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">This section applies exclusively to California residents.</p>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Notice of Collection</h3>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Categories of Personal Information Collected:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Identifiers (name, email)</li>
-                  <li>Commercial information (transaction data)</li>
-                  <li>Internet activity (application usage data)</li>
-                  <li>Inferences (none)</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> EMAIL SERVICE PROVIDERS</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Third-Party Email Services</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Your emails are stored on third-party email services (Gmail, Microsoft, etc.):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>We do not control their privacy practices</li>
+                  <li>Your email data is subject to their privacy policies</li>
+                  <li>We do not access or retrieve your emails from these services</li>
+                  <li>Email content remains exclusively with your email provider</li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  <span className="font-semibold text-gray-900">Sources:</span> Directly from you, automatically through our applications, and from payment processors.
-                </p>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">No Sale of Personal Information</h3>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">We do not sell personal information and have not done so in the preceding 12 months. We do not share personal information for cross-context behavioral advertising.</p>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">California &quot;Shine the Light&quot; Law</h3>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">We do not share your personal information with third parties for their own direct marketing purposes.</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed"><span className="font-semibold text-gray-900">CCPA Rights:</span> See the &quot;Your Privacy Rights&quot; section above for details on exercising your rights.</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Our Integration</h3>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Our applications connect to your email service using OAuth authentication</li>
+                  <li>We receive only the permissions you grant</li>
+                  <li>All processing happens on your device (desktop, mobile)</li>
+                  <li>No email content is transmitted to our servers</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Your Responsibilities</h3>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Review privacy policies of your email service provider</li>
+                  <li>Understand what permissions you grant to our applications</li>
+                  <li>Maintain security of your email account credentials</li>
+                  <li>Keep your private encryption keys secure</li>
+                </ul>
               </div>
 
-              {/* Marketing Communications */}
+              {/* 13. PLATFORM-SPECIFIC INFORMATION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Marketing Communications</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Transactional Emails (cannot opt out):</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Purchase confirmations and account notifications</li>
-                  <li>Security alerts and service updates</li>
-                  <li className="font-bold">Application version update notifications</li>
-                  <li className="font-bold">Authentication and token-related alerts</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> PLATFORM-SPECIFIC INFORMATION</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Desktop Applications (Windows, macOS, Linux)</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Our desktop applications:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Install locally on your computer</li>
+                  <li>Process all email operations on your device</li>
+                  <li>Store private keys locally (unless you enable encrypted cloud backup)</li>
+                  <li>Connect to auth.scomm.ai only for subscription verification</li>
+                  <li>Check for updates via https://scomm-ai.github.io/version/index.json (no personal data transmitted)</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Marketing Emails (can opt out):</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Product announcements and promotional offers</li>
-                  <li>Newsletters and affiliate program updates</li>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Mobile Applications (iOS, Android)</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Our mobile applications:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>Install on your mobile device</li>
+                  <li>Process all email operations on your device</li>
+                  <li>Store private keys in device secure storage (unless you enable encrypted cloud backup)</li>
+                  <li>Connect to auth.scomm.ai only for subscription verification</li>
+                  <li>Check for updates via https://scomm-ai.github.io/version/index.json (no personal data transmitted)</li>
+                  <li>Follow platform-specific security and privacy guidelines</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">You can opt out by:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
+              </div>
+
+              {/* 14. MARKETING COMMUNICATIONS */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> MARKETING COMMUNICATIONS</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Types of Communications</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We may send:</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Transactional Messages (cannot opt out):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Purchase confirmations</li>
+                  <li>Account notifications</li>
+                  <li>Security alerts</li>
+                  <li>Service updates</li>
+                  <li>Feature announcements</li>
+                  <li>Application version update notifications</li>
+                  <li>Authentication and token-related alerts</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Marketing Messages (can opt out):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Product announcements</li>
+                  <li>Promotional offers</li>
+                  <li>Newsletters</li>
+                  <li>Tips and tutorials</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Consent and Opt-Out</h3>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">CASL Compliance (Canada):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We obtain express or implied consent before sending commercial electronic messages</li>
+                  <li>Every marketing email includes an unsubscribe link</li>
+                  <li>We honor opt-out requests within 10 business days</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">You can opt out by:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Clicking &quot;unsubscribe&quot; in any marketing email</li>
                   <li>Emailing privacy@scomm.ai with &quot;Unsubscribe&quot; in the subject</li>
                   <li>Updating preferences in your account settings</li>
+                  <li>Adjusting notification settings in the application</li>
                 </ul>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  CASL Compliance: We obtain express or implied consent before sending commercial electronic messages and honor opt-out requests within 10 business days.
-                </p>
+                <p className="text-sm sm:text-base text-gray-700">Opting out of marketing does not affect transactional or service-related communications.</p>
               </div>
 
-              {/* Changes to Policy */}
+              {/* 15. CALIFORNIA-SPECIFIC DISCLOSURES */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Changes To This Privacy Policy</h2>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">We reserve the right to update this Privacy Policy at any time. Material changes will be notified via email or app banner with 30 days notice. Continued use of our applications constitutes acceptance of the updated policy.</p>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">If you do not agree with changes, you should discontinue use and may request deletion of your account.</p>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CALIFORNIA-SPECIFIC DISCLOSURES</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Categories of Personal Information Collected</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">In the past 12 months, we have collected the following categories of personal information (as defined by CCPA):</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Identifiers (name, email, IP address)</li>
+                  <li>Commercial information (purchase history, payment details)</li>
+                  <li>Internet activity (service usage patterns, feature interactions)</li>
+                  <li>Geolocation data (approximate location from IP)</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">We do NOT collect:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Email content or communications</li>
+                  <li>Email metadata or headers</li>
+                  <li>Biometric information</li>
+                  <li>Sensitive personal information beyond what is necessary for account security</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Sources of Information</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We collect personal information from:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Directly from you (account registration, purchases)</li>
+                  <li>Automatically through your use of our services</li>
+                  <li>Third parties (payment processors, analytics providers, identity providers)</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Business Purposes</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">We use personal information for purposes described in Section 3 (How We Use Your Information).</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Sharing for Business Purposes</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">We share information with service providers for business purposes as described in Section 8 (Data Sharing).</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">No Sale of Personal Information</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We do not sell personal information as defined by CCPA.</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">We do not share personal information for cross-context behavioral advertising.</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Shine the Light Law</h3>
+                <p className="text-sm sm:text-base text-gray-700">California residents may request information about disclosure of personal information to third parties for direct marketing purposes. We do not share personal information with third parties for their direct marketing purposes.</p>
               </div>
 
-              {/* Contact */}
+              {/* 16. CHANGES TO THIS PRIVACY POLICY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Contact Information</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CHANGES TO THIS PRIVACY POLICY</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Updates and Modifications</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We reserve the right to update this Privacy Policy at any time to reflect:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Changes in our practices</li>
+                  <li>Legal or regulatory requirements</li>
+                  <li>New features or services</li>
+                  <li>Feedback and improvements</li>
+                  <li>Updates to authentication mechanisms or cryptographic protocols</li>
+                  <li>New platform support (additional operating systems or devices)</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Notice of Changes</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">When we make changes:</p>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Material Changes:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>We will provide prominent notice (email notification, in-app notification)</li>
+                  <li>Effective 30 days after notice</li>
+                  <li>You may review changes before they take effect</li>
+                </ul>
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Non-Material Changes:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>Updated &quot;Last Updated&quot; date</li>
+                  <li>Effective immediately upon posting</li>
+                  <li>Continued use constitutes acceptance</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Review and Acceptance</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We encourage you to review this Privacy Policy periodically.</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Continued use of our services after changes become effective constitutes acceptance of the updated policy.</p>
+                <p className="text-sm sm:text-base text-gray-700">If you do not agree with changes, you should discontinue use and may request deletion of your account.</p>
+              </div>
+
+              {/* 17. CONTACT INFORMATION */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CONTACT INFORMATION</h2>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Privacy Inquiries</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">For privacy-related questions, concerns, or requests:</p>
                 <div className="bg-[#F5F9FA] rounded-xl p-6 sm:p-8 border border-gray-200 mb-6">
-                  <p className="text-sm sm:text-base text-gray-700 mb-2"><strong className="font-semibold">Email:</strong> privacy@scomm.ai</p>
-                  <p className="text-sm sm:text-base text-gray-700 mb-2"><strong className="font-semibold">DPO:</strong> dpo@scomm.ai</p>
-                  <p className="text-sm sm:text-base text-gray-700"><strong className="font-semibold">Mailing Address:</strong><br />scomm.ai — Media Routes Inc.<br />86-50 Burnhamthorpe Rd W,<br />Mississauga, ON L5B 3C2<br />Canada</p>
+                  <p className="text-sm sm:text-base text-gray-700 mb-2"><span className="font-semibold text-gray-900">Email:</span> privacy@scomm.ai</p>
+                  <p className="text-sm sm:text-base text-gray-700 mb-4"><span className="font-semibold text-gray-900">Subject Line:</span> Privacy Inquiry</p>
+                  <p className="text-sm sm:text-base text-gray-700"><span className="font-semibold text-gray-900">Mailing Address:</span><br />scomm.ai (Media Routes Inc.)<br />86-50 Burnhamthorpe Rd W,<br />Mississauga, ON L5B 3C2<br />Canada</p>
                 </div>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Regulatory Authorities:</p>
-                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
-                  <li><strong className="font-semibold">Canada:</strong> Office of the Privacy Commissioner (www.priv.gc.ca)</li>
-                  <li><strong className="font-semibold">EU/UK:</strong> Your local data protection authority</li>
-                  <li><strong className="font-semibold">California:</strong> California Attorney General (oag.ca.gov)</li>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Data Protection Officer</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-6">If required by applicable law, you may contact our Data Protection Officer at: dpo@scomm.ai</p>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Regulatory Authorities</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">You have the right to lodge a complaint with relevant supervisory authorities:</p>
+                <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                  <li><span className="font-semibold text-gray-900">Canada:</span> Office of the Privacy Commissioner of Canada (www.priv.gc.ca)</li>
+                  <li><span className="font-semibold text-gray-900">EU/UK:</span> Your local data protection authority</li>
+                  <li><span className="font-semibold text-gray-900">California:</span> California Attorney General (oag.ca.gov)</li>
+                </ul>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Response Time</h3>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">We strive to respond to all inquiries within:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
+                  <li>5 business days for acknowledgment</li>
+                  <li>30 days for complete response</li>
+                  <li>60 days for complex requests (with notification of extension)</li>
                 </ul>
               </div>
 
-              {/* Summary */}
+              {/* 18. ACCESSIBILITY */}
               <div>
-                <hr className="border-gray-200 mb-8 sm:mb-12" />
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">SUMMARY OF OUR PRIVACY COMMITMENTS</h2>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Client-Side Architecture:</p>
-                <ul className="list-none space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>✓ Core processing happens on your device (desktop, iOS, mobile)</li>
-                  <li>✓ Private keys stay on your device (unless you choose encrypted cloud backup)</li>
-                  <li>✓ You control your encryption password — we cannot decrypt your private key backups</li>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> ACCESSIBILITY</h2>
+                <p className="text-sm sm:text-base text-gray-700 mb-4">We are committed to ensuring this Privacy Policy is accessible to everyone.</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">If you have difficulty accessing this policy or require it in an alternative format:</p>
+                <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>Contact <span className="font-semibold text-gray-900">privacy@scomm.ai</span></li>
+                  <li>Request formats: large print, audio, plain language summary</li>
                 </ul>
+                <p className="text-sm sm:text-base text-gray-700">We will provide reasonable accommodations within 10 business days.</p>
+              </div>
+
+              {/* 19. LANGUAGE */}
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> LANGUAGE</h2>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">This Privacy Policy is provided in English.</p>
+                <p className="text-sm sm:text-base text-gray-700">If translated versions are made available, the English version prevails in case of conflicts or discrepancies.</p>
+              </div>
+
+              {/* SUMMARY */}
+              <div>
+                <hr className="border-gray-200 my-8 sm:my-12" />
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">SUMMARY OF OUR PRIVACY COMMITMENTS</h2>
+                
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Privacy-First Architecture:</p>
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>✓ All email processing happens on YOUR device (desktop, mobile), not our servers</li>
+                  <li>✓ We never access, read, or store your email content</li>
+                  <li>✓ We never see email headers, metadata, or sender information</li>
+                  <li>✓ Your emails stay with your email provider (Gmail, Microsoft, etc.)</li>
+                  <li>✓ Client-side architecture across all platforms</li>
+                </ul>
+
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We Actually Collect:</p>
-                <ul className="list-none space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>✓ Account information (name, email, encrypted password)</li>
                   <li>✓ Billing information (for purchases)</li>
-                  <li>✓ Application usage data (features used, error logs)</li>
-                  <li>✓ Technical information (IP address, device type)</li>
+                  <li>✓ Service usage data (features used)</li>
                   <li>✓ Public cryptographic keys (for email encryption)</li>
-                  <li>✓ Optionally: Encrypted private key backups (AES-256-GCM, encrypted with YOUR password)</li>
+                  <li>✓ Optionally: Encrypted private key backups (encrypted with YOUR password using AES-256-GCM)</li>
                   <li>✓ Authentication tokens (for secure access to paid features)</li>
                 </ul>
-                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We NEVER Collect:</p>
-                <ul className="list-none space-y-2 text-sm sm:text-base text-gray-700 mb-6">
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">What We Never Collect:</p>
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>✗ Email content or communications</li>
+                  <li>✗ Email metadata or headers</li>
+                  <li>✗ Your email provider data</li>
                   <li>✗ Unencrypted private cryptographic keys</li>
                   <li>✗ Your private key encryption passwords</li>
-                  <li>✗ Email content, metadata, or headers</li>
                   <li>✗ Personal data during version update checks</li>
                 </ul>
-                <hr className="border-gray-200 mb-8 sm:mb-12" />
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Your Rights:</p>
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
+                  <li>✓ Access your data (including cryptographic keys)</li>
+                  <li>✓ Correct inaccurate information</li>
+                  <li>✓ Delete your account and data (including all keys and tokens)</li>
+                  <li>✓ Export your data</li>
+                  <li>✓ Opt out of marketing</li>
+                  <li>✓ File complaints with regulators</li>
+                </ul>
+
+                <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Security Measures:</p>
+                <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-6">
+                  <li>✓ Zero-knowledge architecture for private keys</li>
+                  <li>✓ AES-256-GCM encryption for optional key backups</li>
+                  <li>✓ Short-lived access tokens for enhanced security</li>
+                  <li>✓ Cryptographically signed authentication tokens</li>
+                  <li>✓ TLS/SSL encryption for all communications</li>
+                  <li>✓ Client-side processing on all platforms</li>
+                </ul>
+                <hr className="border-gray-200 my-8 sm:my-12" />
+              </div>
+
+              {/* ACKNOWLEDGMENT */}
+              <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">ACKNOWLEDGMENT</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
-                  By using scomm.ai applications and related services, you acknowledge that you have read, understood, and agree to this Privacy Policy.
+                  By using scomm.ai applications and services, you acknowledge that you have read, understood, and agree to this Privacy Policy.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
-                  If you do not agree with this policy, please do not use our applications or services.
+                  If you do not agree with this policy, please do not use our services.
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
                   <span className="font-semibold text-gray-900">Effective Date:</span> February 06, 2026
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
-                  <span className="font-semibold text-gray-900">Last Updated:</span> March 2026
+                  <span className="font-semibold text-gray-900">Last Updated:</span> March 29, 2026
                 </p>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-8 sm:mb-12">
                   <span className="font-semibold text-gray-900">Version:</span> 2.0
                 </p>
                 <hr className="border-gray-200 mb-8 sm:mb-12" />
-                <p className="text-sm sm:text-base text-center font-semibold text-gray-900">
-                  END OF PRIVACY POLICY — APPLICATIONS &amp; RELATED SERVICES
+                <p className="text-sm sm:text-base text-center font-semibold text-gray-900 mb-4">
+                  END OF PRIVACY POLICY
                 </p>
               </div>
 
