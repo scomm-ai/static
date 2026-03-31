@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
         <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F5F9FA] to-white overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#2C8DA1]/5 rounded-full blur-3xl -z-10"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#023347]/5 rounded-full blur-3xl -z-10"></div>
-          
+
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center mb-0">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight">
@@ -32,11 +32,10 @@ export default function PrivacyPolicyPage() {
             <div className="flex gap-0 justify-center">
               <button
                 onClick={() => setActiveTab('website')}
-                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${
-                  activeTab === 'website'
-                    ? 'bg-[#EAF5F7] text-[#023347]'
-                    : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
-                }`}
+                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${activeTab === 'website'
+                  ? 'bg-[#EAF5F7] text-[#023347]'
+                  : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
+                  }`}
               >
                 Website Policy
                 {activeTab === 'website' && (
@@ -45,11 +44,10 @@ export default function PrivacyPolicyPage() {
               </button>
               <button
                 onClick={() => setActiveTab('apps')}
-                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${
-                  activeTab === 'apps'
-                    ? 'bg-[#EAF5F7] text-[#023347]'
-                    : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
-                }`}
+                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${activeTab === 'apps'
+                  ? 'bg-[#EAF5F7] text-[#023347]'
+                  : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
+                  }`}
               >
                 Applications &amp; Services Policy
                 {activeTab === 'apps' && (
@@ -134,7 +132,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Information You Provide Directly
+                  Information You Provide Directly
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   When you interact with our website, we may collect:
@@ -222,7 +220,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Information from Third Parties
+                  Information from Third Parties
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   We may receive information about you from:
@@ -304,7 +302,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Public Key Storage
+                  Public Key Storage
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   For email encryption functionality:
@@ -316,7 +314,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Private Key Storage - User Control
+                  Private Key Storage - User Control
                 </h3>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Default (Recommended):</p>
@@ -351,7 +349,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Single Sign-On (SSO) Authentication
+                  Single Sign-On (SSO) Authentication
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   For commercial add-ons and paid features:
@@ -389,7 +387,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Token Refresh Process
+                  Token Refresh Process
                 </h3>
                 <ul className="list-disc list-outside ml-5 sm:ml-6 space-y-2 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Access tokens are short-lived for security</li>
@@ -405,7 +403,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   What We Do NOT Collect During Authentication
+                  What We Do NOT Collect During Authentication
                 </h3>
                 <ul className="list-disc list-outside ml-5 sm:ml-6 space-y-2 text-sm sm:text-base text-gray-700">
                   <li>We do <span className="font-bold">not</span> collect browsing history from identity providers</li>
@@ -448,7 +446,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   What Stays on Your Device
+                  What Stays on Your Device
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   The following never leave your device:
@@ -462,7 +460,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   What We Store on Our Servers
+                  What We Store on Our Servers
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   We only store:
@@ -527,7 +525,7 @@ export default function PrivacyPolicyPage() {
                 </h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Types of Cookies We Use
+                  Types of Cookies We Use
                 </h3>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Essential Cookies:</p>
@@ -562,7 +560,7 @@ export default function PrivacyPolicyPage() {
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Cookie Management
+                  Cookie Management
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   You can control cookies through:
@@ -578,7 +576,7 @@ export default function PrivacyPolicyPage() {
                 </p>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                   Third-Party Cookies
+                  Third-Party Cookies
                 </h3>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   We use cookies from third-party services:
@@ -939,7 +937,7 @@ export default function PrivacyPolicyPage() {
               {/* Your Privacy Rights */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
-                  YOUR PRIVACY RIGHTS
+                  Your Privacy Rights
                 </h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
@@ -1090,8 +1088,7 @@ export default function PrivacyPolicyPage() {
               {/* Children's Privacy */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
-                  Children's Privacy
-                </h2>
+Children&apos;s Privacy                </h2>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Age Restriction:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
@@ -1438,7 +1435,7 @@ export default function PrivacyPolicyPage() {
                 <hr className="border-gray-200 mb-8 sm:mb-12" />
 
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
-                  SUMMARY OF OUR PRIVACY COMMITMENTS
+                  Summary Of Our Privacy Commitments
                 </h2>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Client-Side Architecture:</p>
@@ -1489,7 +1486,7 @@ export default function PrivacyPolicyPage() {
                 <hr className="border-gray-200 mb-8 sm:mb-12" />
 
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">
-                  ACKNOWLEDGMENT
+                  Acknowledgment
                 </h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   By using the scomm.ai website, you acknowledge that you have read, understood, and agree to this Privacy Policy.
@@ -1497,7 +1494,7 @@ export default function PrivacyPolicyPage() {
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-6">
                   If you do not agree with this policy, please do not use our website.
                 </p>
-                
+
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-2">
                   <span className="font-semibold text-gray-900">Last Updated:</span> March 2026
                 </p>
@@ -1506,7 +1503,7 @@ export default function PrivacyPolicyPage() {
                 </p>
 
                 <hr className="border-gray-200 mb-8 sm:mb-12" />
-                
+
                 <p className="text-sm sm:text-base text-center font-semibold text-gray-900">
                   END OF PRIVACY POLICY
                 </p>
@@ -1555,7 +1552,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Information We Collect */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">2. INFORMATION WE COLLECT</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Information We Collect</h2>
 
                 {/* 2.1 */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Information You Provide Directly</h3>
@@ -1787,7 +1784,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 3. HOW WE USE YOUR INFORMATION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> HOW WE USE YOUR INFORMATION</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> How we Use Your Information</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We use the information we collect for the following purposes:</p>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Service Delivery and Management:</p>
@@ -1845,7 +1842,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 4. LEGAL BASIS FOR PROCESSING */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> LEGAL BASIS FOR PROCESSING (PIPEDA &amp; GDPR COMPLIANCE)</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Legal Basis For Processing (PIPEDA &amp; GDPR COMPLIANCE)</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We process personal information on the following legal bases:</p>
 
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Consent:</p>
@@ -1884,8 +1881,8 @@ export default function PrivacyPolicyPage() {
 
               {/* 5. COOKIES & TRACKING TECHNOLOGIES */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> COOKIES &amp; TRACKING TECHNOLOGIES</h2>
-                
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Cookies &amp; Tracking Technologies</h2>
+
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Types of Technologies We Use</h3>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Essential Session Data:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
@@ -1931,8 +1928,8 @@ export default function PrivacyPolicyPage() {
 
               {/* 6. DATA RETENTION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> DATA RETENTION</h2>
-                
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Data Retention</h2>
+
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Retention Periods</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We retain personal information for as long as necessary to fulfill the purposes described in this Privacy Policy:</p>
 
@@ -1995,7 +1992,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 7. DATA SECURITY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> DATA SECURITY</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Data Security</h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Security Measures</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We implement industry-standard security measures:</p>
@@ -2071,7 +2068,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 8. DATA SHARING AND DISCLOSURE */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> DATA SHARING AND DISCLOSURE</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Data Sharing And Disclosure</h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Service Providers</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We share information with trusted third-party service providers:</p>
@@ -2166,7 +2163,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 9. INTERNATIONAL DATA TRANSFERS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> INTERNATIONAL DATA TRANSFERS</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> International Data Transfers</h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Transfer Mechanisms</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">Your information may be transferred to and processed in countries other than your country of residence:</p>
@@ -2202,7 +2199,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 10. YOUR PRIVACY RIGHTS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> YOUR PRIVACY RIGHTS</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Your Privacy Rights</h2>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Rights Under PIPEDA (Canada)</h3>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Access:</p>
@@ -2322,7 +2319,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 11. CHILDREN'S PRIVACY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CHILDREN&apos;S PRIVACY</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Children&apos;s Privacy</h2>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Age Restriction:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>Our applications and services are not intended for children under 13 (16 in EU)</li>
@@ -2350,7 +2347,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 12. EMAIL SERVICE PROVIDERS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> EMAIL SERVICE PROVIDERS</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Email Service Providers</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Third-Party Email Services</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">Your emails are stored on third-party email services (Gmail, Microsoft, etc.):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
@@ -2377,7 +2374,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 13. PLATFORM-SPECIFIC INFORMATION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> PLATFORM-SPECIFIC INFORMATION</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Platform-Specific Information</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Desktop Applications (Windows, macOS, Linux)</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">Our desktop applications:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
@@ -2401,7 +2398,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 14. MARKETING COMMUNICATIONS */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> MARKETING COMMUNICATIONS</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Marketing Communications</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Types of Communications</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">We may send:</p>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Transactional Messages (cannot opt out):</p>
@@ -2440,7 +2437,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 15. CALIFORNIA-SPECIFIC DISCLOSURES */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CALIFORNIA-SPECIFIC DISCLOSURES</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> California-Specific Disclosures</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Categories of Personal Information Collected</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">In the past 12 months, we have collected the following categories of personal information (as defined by CCPA):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
@@ -2476,7 +2473,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 16. CHANGES TO THIS PRIVACY POLICY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CHANGES TO THIS PRIVACY POLICY</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Changes To This Privacy Policy</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Updates and Modifications</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">We reserve the right to update this Privacy Policy at any time to reflect:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-6">
@@ -2509,7 +2506,8 @@ export default function PrivacyPolicyPage() {
 
               {/* 17. CONTACT INFORMATION */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> CONTACT INFORMATION</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Contact Information</h2>
+
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Privacy Inquiries</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">For privacy-related questions, concerns, or requests:</p>
                 <div className="bg-[#F5F9FA] rounded-xl p-6 sm:p-8 border border-gray-200 mb-6">
@@ -2537,7 +2535,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 18. ACCESSIBILITY */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> ACCESSIBILITY</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Accessibility</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We are committed to ensuring this Privacy Policy is accessible to everyone.</p>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">If you have difficulty accessing this policy or require it in an alternative format:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
@@ -2549,7 +2547,7 @@ export default function PrivacyPolicyPage() {
 
               {/* 19. LANGUAGE */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> LANGUAGE</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Language</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">This Privacy Policy is provided in English.</p>
                 <p className="text-sm sm:text-base text-gray-700">If translated versions are made available, the English version prevails in case of conflicts or discrepancies.</p>
               </div>
@@ -2557,8 +2555,8 @@ export default function PrivacyPolicyPage() {
               {/* SUMMARY */}
               <div>
                 <hr className="border-gray-200 my-8 sm:my-12" />
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">SUMMARY OF OUR PRIVACY COMMITMENTS</h2>
-                
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Summary Of Our Privacy Commitments</h2>
+
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Privacy-First Architecture:</p>
                 <ul className="list-none space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>✓ All email processing happens on YOUR device (desktop, mobile), not our servers</li>
@@ -2612,7 +2610,7 @@ export default function PrivacyPolicyPage() {
 
               {/* ACKNOWLEDGMENT */}
               <div>
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">ACKNOWLEDGMENT</h2>
+                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Acknowledgment</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
                   By using scomm.ai applications and services, you acknowledge that you have read, understood, and agree to this Privacy Policy.
                 </p>
