@@ -1518,7 +1518,7 @@ Children&apos;s Privacy                </h2>
           <div className="max-w-4xl mx-auto prose prose-lg max-w-none">
             <div className="space-y-8 sm:space-y-12">
 
-              {/* Introduction */}
+              {/* Introduction  Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Introduction</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">
@@ -1535,7 +1535,7 @@ Children&apos;s Privacy                </h2>
                 </p>
               </div>
 
-              {/* Who We Are */}
+              {/* Who We Are Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Who Are We</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">scomm.ai is operated by:</p>
@@ -1550,7 +1550,7 @@ Children&apos;s Privacy                </h2>
                 </p>
               </div>
 
-              {/* Information We Collect */}
+              {/* Information We Collect Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Information We Collect</h2>
 
@@ -1582,7 +1582,7 @@ Children&apos;s Privacy                </h2>
                   <li>Any other information you choose to provide</li>
                 </ul>
 
-                {/* 2.2 */}
+                {/* 2.2 Applications Policy Tab Content */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Automatically Collected Information</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-3">When you use our services, we automatically collect:</p>
 
@@ -1637,7 +1637,7 @@ Children&apos;s Privacy                </h2>
                 </p>
                 <p className="text-sm sm:text-base font-bold text-gray-900 mb-2 uppercase tracking-wide">HOW OUR SERVICES WORK:</p>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Client-Side Processing Only:</p>
-                <p className="text-sm sm:text-base text-gray-700 mb-2">Our applications operate with a privacy-by-design, client-side architecture:</p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Our applications operate with a <span className='font-bold'> privacy-by-design, client-side architecture:</span></p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>All spam filtering, phishing detection, and AI-powered search operate entirely on your own device (client-side)</li>
                   <li>No email content, metadata, or identifiable information is sent to our servers</li>
@@ -1668,24 +1668,24 @@ Children&apos;s Privacy                </h2>
                   <span className="font-semibold not-italic text-gray-800">Note:</span> Private keys are the user&apos;s responsibility and are not stored on our servers. We employ a privacy-by-design approach where your email data never leaves your device and never reaches our servers.
                 </p>
 
-                {/* 2.4 */}
+                {/* 2.4 Applications Policy Tab Content */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Cryptographic Key Management</h3>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Public Key Storage:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
-                  <li>We store public cryptographic keys on our servers associated with each email address</li>
+                  <li>We store <span className='font-bold'> public cryptographic keys</span> on our servers associated with each email address</li>
                   <li>Public keys are used to enable encrypted communication</li>
                   <li>Public keys do not allow us to decrypt or read your encrypted content</li>
                 </ul>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Private Key Storage — User Control:</p>
                 <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Default (Recommended):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>Your private cryptographic keys remain exclusively on your client device (desktop, mobile)</li>
-                  <li>We never have access to unencrypted private keys</li>
+                  <li>Your <span className='font-bold'> private cryptographic keys remain exclusively on your client device </span> (desktop, mobile)</li>
+                  <li>We <span className='font-bold'>never</span> have access to unencrypted private keys</li>
                   <li>You are solely responsible for backing up and securing your private keys</li>
                 </ul>
                 <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Optional Cloud Backup (User Choice):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>You may optionally upload a symmetrically encrypted copy of your private key to our servers</li>
+                  <li>You may <span className='font-bold'> optionally</span> upload a symmetrically encrypted copy of your private key to our servers</li>
                   <li>Encryption uses AES-256-GCM algorithm (industry-standard encryption)</li>
                   <li>You choose the encryption password — we do not have access to this password</li>
                   <li>We cannot decrypt your private key without your password</li>
@@ -1699,7 +1699,7 @@ Children&apos;s Privacy                </h2>
                   <li>If you lose your password for the encrypted backup, we cannot recover your private key</li>
                 </ul>
 
-                {/* 2.5 */}
+                {/* 2.5 Applications Policy Tab Content */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Authentication and Single Sign-On (SSO)</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">For commercial add-ons and paid features:</p>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">We support Single Sign-On (SSO) through external identity providers including: Google, Microsoft, and other third-party identity providers.</p>
@@ -1725,7 +1725,7 @@ Children&apos;s Privacy                </h2>
                   <li>No additional personal information is transmitted during token refresh</li>
                 </ul>
 
-                {/* 2.6 */}
+                {/* 2.6 Applications Policy Tab Content */}
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Information from Third Parties</h3>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">We may receive information about you from:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700">
@@ -1736,7 +1736,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* Client-Side Architecture */}
+              {/* Client-Side Architecture  Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Client-Side Architecture — Important Privacy Protection</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">Our applications operate with a <span className="font-bold">privacy-by-design, client-side architecture:</span></p>
@@ -1770,7 +1770,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* Email Service Providers */}
+              {/* Email Service Providers Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Email Service Providers (Gmail, Microsoft, etc.)</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">Our applications integrate with third-party email services using OAuth or modern authentication:</p>
@@ -1782,7 +1782,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 3. HOW WE USE YOUR INFORMATION */}
+              {/* 3. HOW WE USE YOUR INFORMATION Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> How we Use Your Information</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We use the information we collect for the following purposes:</p>
@@ -1840,7 +1840,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 4. LEGAL BASIS FOR PROCESSING */}
+              {/* 4. LEGAL BASIS FOR PROCESSING Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Legal Basis For Processing (PIPEDA &amp; GDPR COMPLIANCE)</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We process personal information on the following legal bases:</p>
@@ -1879,7 +1879,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 5. COOKIES & TRACKING TECHNOLOGIES */}
+              {/* 5. COOKIES & TRACKING TECHNOLOGIES Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Cookies &amp; Tracking Technologies</h2>
 
@@ -1926,7 +1926,7 @@ Children&apos;s Privacy                </h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-6">These third parties operate under their own privacy policies.</p>
               </div>
 
-              {/* 6. DATA RETENTION */}
+              {/* 6. DATA RETENTION Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6"> Data Retention</h2>
 
@@ -1990,7 +1990,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 7. DATA SECURITY */}
+              {/* 7. DATA SECURITY Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Data Security</h2>
 
@@ -2066,7 +2066,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 8. DATA SHARING AND DISCLOSURE */}
+              {/* 8. DATA SHARING AND DISCLOSURE Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Data Sharing And Disclosure</h2>
 
@@ -2161,7 +2161,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 9. INTERNATIONAL DATA TRANSFERS */}
+              {/* 9. INTERNATIONAL DATA TRANSFERS Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> International Data Transfers</h2>
 
@@ -2197,7 +2197,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 10. YOUR PRIVACY RIGHTS */}
+              {/* 10. YOUR PRIVACY RIGHTS Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Your Privacy Rights</h2>
 
@@ -2317,7 +2317,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 11. CHILDREN'S PRIVACY */}
+              {/* 11. CHILDREN'S PRIVACY Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Children&apos;s Privacy</h2>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Age Restriction:</p>
@@ -2345,7 +2345,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 12. EMAIL SERVICE PROVIDERS */}
+              {/* 12. EMAIL SERVICE PROVIDERS Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Email Service Providers</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Third-Party Email Services</h3>
@@ -2372,7 +2372,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 13. PLATFORM-SPECIFIC INFORMATION */}
+              {/* 13. PLATFORM-SPECIFIC INFORMATION Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Platform-Specific Information</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Desktop Applications (Windows, macOS, Linux)</h3>
@@ -2396,7 +2396,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 14. MARKETING COMMUNICATIONS */}
+              {/* 14. MARKETING COMMUNICATIONS Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Marketing Communications</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Types of Communications</h3>
@@ -2435,7 +2435,7 @@ Children&apos;s Privacy                </h2>
                 <p className="text-sm sm:text-base text-gray-700">Opting out of marketing does not affect transactional or service-related communications.</p>
               </div>
 
-              {/* 15. CALIFORNIA-SPECIFIC DISCLOSURES */}
+              {/* 15. CALIFORNIA-SPECIFIC DISCLOSURES Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> California-Specific Disclosures</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Categories of Personal Information Collected</h3>
@@ -2471,7 +2471,7 @@ Children&apos;s Privacy                </h2>
                 <p className="text-sm sm:text-base text-gray-700">California residents may request information about disclosure of personal information to third parties for direct marketing purposes. We do not share personal information with third parties for their direct marketing purposes.</p>
               </div>
 
-              {/* 16. CHANGES TO THIS PRIVACY POLICY */}
+              {/* 16. CHANGES TO THIS PRIVACY POLICY Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Changes To This Privacy Policy</h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Updates and Modifications</h3>
@@ -2504,7 +2504,7 @@ Children&apos;s Privacy                </h2>
                 <p className="text-sm sm:text-base text-gray-700">If you do not agree with changes, you should discontinue use and may request deletion of your account.</p>
               </div>
 
-              {/* 17. CONTACT INFORMATION */}
+              {/* 17. CONTACT INFORMATION Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Contact Information</h2>
 
@@ -2533,7 +2533,7 @@ Children&apos;s Privacy                </h2>
                 </ul>
               </div>
 
-              {/* 18. ACCESSIBILITY */}
+              {/* 18. ACCESSIBILITY Applications Policy Tab Content*/}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Accessibility</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-4">We are committed to ensuring this Privacy Policy is accessible to everyone.</p>
@@ -2545,14 +2545,14 @@ Children&apos;s Privacy                </h2>
                 <p className="text-sm sm:text-base text-gray-700">We will provide reasonable accommodations within 10 business days.</p>
               </div>
 
-              {/* 19. LANGUAGE */}
+              {/* 19. LANGUAGE Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6 mt-8"> Language</h2>
                 <p className="text-sm sm:text-base text-gray-700 mb-2">This Privacy Policy is provided in English.</p>
                 <p className="text-sm sm:text-base text-gray-700">If translated versions are made available, the English version prevails in case of conflicts or discrepancies.</p>
               </div>
 
-              {/* SUMMARY */}
+              {/* SUMMARY  Applications Policy Tab Content*/}
               <div>
                 <hr className="border-gray-200 my-8 sm:my-12" />
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Summary Of Our Privacy Commitments</h2>
@@ -2608,7 +2608,7 @@ Children&apos;s Privacy                </h2>
                 <hr className="border-gray-200 my-8 sm:my-12" />
               </div>
 
-              {/* ACKNOWLEDGMENT */}
+              {/* ACKNOWLEDGMENT Applications Policy Tab Content */}
               <div>
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-4 sm:mb-6">Acknowledgment</h2>
                 <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4">

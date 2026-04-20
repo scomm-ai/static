@@ -4,7 +4,7 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen sm:min-h-[90vh] md:min-h-fit max-h-screen flex items-start sm:items-center md:items-start px-4 sm:px-6 md:px-8 lg:px-8 overflow-hidden pt-16 max-[400px]:pt-16 sm:pt-16 md:pt-20 lg:pt-32 pb-12 sm:pb-16 md:pb-8 lg:pb-24 bg-[#F5F9FA]">
+    <section className="relative min-h-screen sm:min-h-[90vh] md:min-h-fit max-h-screen flex items-start sm:items-center md:items-start px-4 sm:px-6 md:px-8 lg:px-8 overflow-hidden pt-28 max-[400px]:pt-28 sm:pt-28 md:pt-32 lg:pt-40 pb-12 sm:pb-16 md:pb-8 lg:pb-24 bg-[#F5F9FA]">
       {/* Hero Content - Two Column Layout */}
       <div className="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center py-4 sm:py-6 md:pt-4 md:pb-0 lg:py-0">
         {/* Left Column - Text Content */}

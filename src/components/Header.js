@@ -70,8 +70,21 @@ export default function Header() {
   }, []);
 
   return (
-    <header ref={headerRef} className={`fixed top-0 left-0 right-0 z-20 w-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 lg:py-5 bg-[#F5F9FA] ${isVisible ? 'animate-fade-in-down' : 'opacity-0'}`}>
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <header ref={headerRef} className={`fixed top-0 left-0 right-0 z-20 w-full bg-[#F5F9FA] flex flex-col ${isVisible ? 'animate-fade-in-down' : 'opacity-0'}`}>
+      {/* Launch Banner */}
+      <div className="w-full bg-gradient-to-r from-[#023347] to-[#2A8E9C] text-white py-2.5 px-4 shadow-sm border-b border-[#237a87]/30">
+        <div className="max-w-7xl mx-auto text-center flex items-center justify-center gap-2">
+          <span className="flex h-2 w-2 relative">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-300 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-400"></span>
+          </span>
+          <span className="text-xs sm:text-sm font-medium tracking-wide text-gray-50">
+            Launch date: <span className="font-bold text-white">Monday 4 May 2026</span>
+          </span>
+        </div>
+      </div>
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-3 sm:py-4 lg:py-5">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center">
           <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold tracking-tight text-[#023347]">
@@ -162,6 +175,7 @@ export default function Header() {
             )}
           </svg>
         </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
