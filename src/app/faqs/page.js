@@ -114,15 +114,11 @@ export default function FAQsPage() {
       ]
     },
     {
-      category: "Billing & Plans",
+      category: "Billing & Add-ons",
       questions: [
         {
-          question: "What's the difference between Free and Pro plans?",
-          answer: "The Free plan includes core encryption, local storage, and basic features. Pro adds live email updates, advanced anti-phishing protection, community AI spam filtering, cloud storage options, and priority support."
-        },
-        {
-          question: "Can I cancel my Pro subscription anytime?",
-          answer: "Yes, you can cancel your Pro subscription at any time. You'll continue to have access to Pro features until the end of your current billing period, then revert to the Free plan."
+          question: "Can I cancel my add-on subscriptions anytime?",
+          answer: "Yes, you can cancel your add-on subscriptions at any time. You'll continue to have access to the premium features until the end of your current billing period."
         },
         {
           question: "Do you offer discounts for students or non-profits?",
@@ -130,7 +126,7 @@ export default function FAQsPage() {
         },
         {
           question: "What payment methods do you accept?",
-          answer: "We accept major credit cards, PayPal, and for Enterprise plans, we can arrange invoicing with net payment terms. All payments are processed securely through our payment partners."
+          answer: "We accept major credit cards and PayPal for all purchases. All payments are processed securely through our payment partners."
         }
       ]
     }

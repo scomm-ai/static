@@ -134,7 +134,7 @@ export default function Features() {
                     <svg className="w-5 h-5 text-[#2C8DA1] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Zero-day phishing protection</span>
+                    <span>Local AI spam detection</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-[#2C8DA1] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +163,7 @@ export default function Features() {
             <div className="text-center mb-8 sm:mb-10">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-900 mb-3 sm:mb-4">Customizable Experience</h3>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8">
-                Switch between Gmail or Outlook visual themes. Works on Windows, Mac, Linux, Android, iOS, and Web.
+                Switch between Gmail or Outlook visual themes. Works on Windows, Mac, Linux, Android, and iOS.
               </p>
             </div>
             {/* Theme Images */}

@@ -82,7 +82,7 @@ export default function SignupPage() {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-medium text-gray-900 mb-1">Advanced Security Features</h3>
-                    <p className="text-sm sm:text-base text-gray-600">Zero-day phishing protection and AI spam filtering</p>
+                    <p className="text-sm sm:text-base text-gray-600">Local AI and advanced spam filtering</p>
                   </div>
                 </div>
 

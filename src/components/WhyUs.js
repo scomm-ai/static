@@ -182,7 +182,7 @@ export default function WhyUs() {
               </div>
               <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">Advanced Security</h3>
               <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed">
-                AI-powered spam & phishing protection with zero-day attack monitoring.
+                AI-powered spam & phishing protection with local machine learning.
               </p>
               </div>
             </AnimateOnScroll>

@@ -97,6 +97,28 @@ export default function Downloads() {
       {/* Downloads Section */}
       <section className="relative pt-4 sm:pt-6 pb-8 sm:pb-12 lg:pb-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
+          {/* Temporary Notice Banner */}
+          <AnimateOnScroll animation="fadeInUp" delay={100}>
+            <div className="mb-10 sm:mb-12 max-w-3xl mx-auto">
+              <div className="bg-[#2C8DA1]/5 border border-[#2C8DA1]/20 rounded-2xl p-4 sm:p-6 flex items-start gap-4 shadow-sm relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#2C8DA1]/5 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-[#2C8DA1]/10 transition-colors duration-500"></div>
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#2C8DA1]/10 flex items-center justify-center flex-shrink-0 text-[#2C8DA1]">
+                  <svg className="w-6 h-6 sm:w-7 sm:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-[#023347] font-semibold text-base sm:text-lg mb-1 leading-tight">
+                    Temporary Notice
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    Download links will be made <span className="text-[#2C8DA1] font-semibold">live on our launch date:</span> Monday 4 May 2026.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </AnimateOnScroll>
+
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {platforms.map((platform, index) => (
               <AnimateOnScroll key={index} animation="fadeInUp" delay={100 + (index * 100)}>
