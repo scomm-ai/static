@@ -8,7 +8,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <div className="pt-4 sm:pt-6">
+      <div className="pt-24 sm:pt-28 md:pt-32">
         {/* Hero Section */}
         <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F5F9FA] to-white overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#2C8DA1]/5 rounded-full blur-3xl -z-10"></div>
@@ -27,14 +27,14 @@ export default function PrivacyPolicyPage() {
         </section>
 
         {/* Tab Switcher */}
-        <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex gap-0 justify-center">
+        <div className="sticky top-[86px] sm:top-[88px] md:top-[88px] lg:top-[90px] xl:top-[92px] z-30 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm mt-4">
+          <div className="max-w-4xl mx-auto px-0 sm:px-6 lg:px-8">
+            <div className="flex flex-row w-full justify-center overflow-x-auto no-scrollbar">
               <button
                 onClick={() => setActiveTab('website')}
-                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${activeTab === 'website'
+                className={`relative flex-1 sm:flex-none whitespace-nowrap px-3 sm:px-8 py-3 sm:py-4 text-[13px] sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-tl-md sm:rounded-t-md ${activeTab === 'website'
                   ? 'bg-[#EAF5F7] text-[#023347]'
-                  : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
+                  : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
                   }`}
               >
                 Website Policy
@@ -44,12 +44,12 @@ export default function PrivacyPolicyPage() {
               </button>
               <button
                 onClick={() => setActiveTab('apps')}
-                className={`relative px-6 sm:px-8 py-4 text-sm sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-t-md ${activeTab === 'apps'
+                className={`relative flex-1 sm:flex-none whitespace-nowrap px-3 sm:px-8 py-3 sm:py-4 text-[13px] sm:text-base font-semibold tracking-wide transition-all duration-200 rounded-tr-md sm:rounded-t-md ${activeTab === 'apps'
                   ? 'bg-[#EAF5F7] text-[#023347]'
-                  : 'text-gray-400 hover:text-gray-600 hover:bg-gray-50'
+                  : 'text-gray-500 hover:text-gray-700 hover:bg-gray-50'
                   }`}
               >
-                Applications &amp; Services Policy
+                Apps &amp; Services Policy
                 {activeTab === 'apps' && (
                   <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#2C8DA1] rounded-full" />
                 )}
