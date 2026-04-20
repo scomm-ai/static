@@ -827,7 +827,7 @@ export default function PrivacyPolicyPage() {
                   What We NEVER Share
                 </h3>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li> <span className="font-bold"> Private cryptographic keys </span> (we don't have access to them)</li>
+                  <li> <span className="font-bold"> Private cryptographic keys </span> (we don&apos;t have access to them)</li>
                   <li> <span className="font-bold">Private key encryption passwords </span> (you choose these, we never see them)</li>
                   <li className="font-bold">Decrypted authentication tokens from third-party providers</li>
                   <li>Email content or communications</li>
@@ -947,7 +947,7 @@ export default function PrivacyPolicyPage() {
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-2">Access:</p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
                   <li>Request copies of your personal information</li>
-                  <li>Receive information about how it's used</li>
+                  <li>Receive information about how it&apos;s used</li>
                   <li className="font-bold">Request information about stored public keys and encrypted private key backups</li>
                 </ul>
 
@@ -1108,7 +1108,7 @@ Children&apos;s Privacy                </h2>
                   <span className="font-semibold text-gray-900">Parental Rights:</span> Parents may:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-6">
-                  <li>Request access to their child's information</li>
+                  <li>Request access to their child&apos;s information</li>
                   <li>Request deletion of information</li>
                   <li>Refuse further collection</li>
                 </ul>
@@ -1637,7 +1637,7 @@ Children&apos;s Privacy                </h2>
                 </p>
                 <p className="text-sm sm:text-base font-bold text-gray-900 mb-2 uppercase tracking-wide">HOW OUR SERVICES WORK:</p>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Client-Side Processing Only:</p>
-                <p className="text-sm sm:text-base text-gray-700 mb-2">Our applications operate with a <span className='font-bold'> privacy-by-design, client-side architecture:</span></p>
+                <p className="text-sm sm:text-base text-gray-700 mb-2">Our applications operate with a <span className="font-bold"> privacy-by-design, client-side architecture:</span></p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
                   <li>All spam filtering, phishing detection, and AI-powered search operate entirely on your own device (client-side)</li>
                   <li>No email content, metadata, or identifiable information is sent to our servers</li>
@@ -1672,20 +1672,20 @@ Children&apos;s Privacy                </h2>
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">Cryptographic Key Management</h3>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Public Key Storage:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-4">
-                  <li>We store <span className='font-bold'> public cryptographic keys</span> on our servers associated with each email address</li>
+                  <li>We store <span className="font-bold"> public cryptographic keys</span> on our servers associated with each email address</li>
                   <li>Public keys are used to enable encrypted communication</li>
                   <li>Public keys do not allow us to decrypt or read your encrypted content</li>
                 </ul>
                 <p className="text-sm sm:text-base font-semibold text-gray-900 mb-1">Private Key Storage — User Control:</p>
                 <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Default (Recommended):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>Your <span className='font-bold'> private cryptographic keys remain exclusively on your client device </span> (desktop, mobile)</li>
-                  <li>We <span className='font-bold'>never</span> have access to unencrypted private keys</li>
+                  <li>Your <span className="font-bold"> private cryptographic keys remain exclusively on your client device </span> (desktop, mobile)</li>
+                  <li>We <span className="font-bold">never</span> have access to unencrypted private keys</li>
                   <li>You are solely responsible for backing up and securing your private keys</li>
                 </ul>
                 <p className="text-sm sm:text-base text-gray-700 font-medium mb-1">Optional Cloud Backup (User Choice):</p>
                 <ul className="list-disc list-inside space-y-1 text-sm sm:text-base text-gray-700 mb-3">
-                  <li>You may <span className='font-bold'> optionally</span> upload a symmetrically encrypted copy of your private key to our servers</li>
+                  <li>You may <span className="font-bold"> optionally</span> upload a symmetrically encrypted copy of your private key to our servers</li>
                   <li>Encryption uses AES-256-GCM algorithm (industry-standard encryption)</li>
                   <li>You choose the encryption password — we do not have access to this password</li>
                   <li>We cannot decrypt your private key without your password</li>

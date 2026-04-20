@@ -135,7 +135,7 @@ export default function HelpCenterPage() {
               Still need help?
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Our support team is here to help you. Get in touch and we'll respond as soon as possible.
+              Our support team is here to help you. Get in touch and we&apos;ll respond as soon as possible.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-3.5 bg-[#2C8DA1] hover:bg-[#257a8d] text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base">

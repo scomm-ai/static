@@ -16,7 +16,7 @@ export default function Mission() {
               We're redefining secure email for everyone
             </h2>
             <p className="text-sm sm:text-base lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
-              Privacy should not require changing your email address or trusting someone else's servers.
+              Privacy should not require changing your email address or trusting someone else&apos;s servers.
               scomm.ai lets individuals and businesses keep using Gmail, Outlook, and Hotmail — while gaining full End-to-End Encryption, on-device AI search, and complete control over where data is stored.
             </p>
           </div>

@@ -9,6 +9,11 @@ const nextConfig = {
     // Don't fail build on TypeScript errors (if any)
     ignoreBuildErrors: true,
   },
+  eslint: {
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;

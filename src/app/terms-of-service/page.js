@@ -93,7 +93,7 @@ export default function TermsOfServicePage() {
                   <li>Violate any applicable laws, regulations, or third-party rights</li>
                   <li>Send spam, phishing emails, or malicious content</li>
                   <li>Transmit viruses, malware, or other harmful code</li>
-                  <li>Attempt to gain unauthorized access to our systems or other users' accounts</li>
+                  <li>Attempt to gain unauthorized access to our systems or other users&apos; accounts</li>
                   <li>Reverse engineer, decompile, or disassemble the Service</li>
                   <li>Use automated systems to access the Service without permission</li>
                   <li>Interfere with or disrupt the Service or servers connected to the Service</li>

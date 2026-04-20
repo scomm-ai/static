@@ -55,7 +55,7 @@ export default function SecurityPolicyPage() {
                   <li><strong className="font-semibold">AES-256:</strong> Industry-standard symmetric encryption for email content</li>
                   <li><strong className="font-semibold">RSA-4096:</strong> Asymmetric encryption for key exchange and digital signatures</li>
                   <li><strong className="font-semibold">Perfect Forward Secrecy:</strong> Unique session keys for each communication</li>
-                  <li><strong className="font-semibold">End-to-End Encryption:</strong> Messages encrypted on sender's device, decrypted only on recipient's device</li>
+                  <li><strong className="font-semibold">End-to-End Encryption:</strong> Messages encrypted on sender&apos;s device, decrypted only on recipient&apos;s device</li>
                 </ul>
 
                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3 sm:mb-4">
@@ -279,7 +279,7 @@ export default function SecurityPolicyPage() {
                   We operate a bug bounty program and may offer rewards for valid security reports. Please do not:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700 mb-4">
-                  <li>Access or modify data that doesn't belong to you</li>
+                  <li>Access or modify data that doesn&apos;t belong to you</li>
                   <li>Perform denial of service attacks</li>
                   <li>Disrupt our services or other users</li>
                   <li>Violate any laws or breach any agreements</li>

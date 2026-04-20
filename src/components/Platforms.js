@@ -63,7 +63,7 @@ export default function Platforms() {
               One Experience, All Platforms.
             </h2>
             <p className="text-sm sm:text-base lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-2">
-              Whether you're on a laptop, desktop, or mobile, scomm.ai is built to keep your privacy intact across devices.
+              Whether you&apos;re on a laptop, desktop, or mobile, scomm.ai is built to keep your privacy intact across devices.
             </p>
           </div>
         </AnimateOnScroll>

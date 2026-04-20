@@ -165,7 +165,7 @@ export default function SignupPage() {
                   className="w-full px-3 py-2.5 text-sm text-gray-900 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#2C8DA1] focus:border-[#2C8DA1] transition-all"
                   placeholder="At least 8 characters"
                 />
-                <p className="mt-1 text-xs text-gray-500">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+                <p className="mt-1 text-xs text-gray-500">Use 8 or more characters with a mix of letters, numbers &amp; symbols</p>
               </div>
 
               {/* Confirm Password Input */}

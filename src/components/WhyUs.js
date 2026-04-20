@@ -167,7 +167,7 @@ export default function WhyUs() {
               </div>
               <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">Offline Access</h3>
               <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed">
-                Compose & send emails offline. Drafts never leave your device until sent.
+                Compose &amp; send emails offline. Drafts never leave your device until sent.
               </p>
               </div>
             </AnimateOnScroll>
@@ -182,7 +182,7 @@ export default function WhyUs() {
               </div>
               <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">Advanced Security</h3>
               <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed">
-                AI-powered spam & phishing protection with local machine learning.
+                AI-powered spam & phishing protection with local machine learning. We use advanced machine learning models localized on your machine to detect anomalies and potential threats. Your data never leaves your device — that&apos;s our promise.
               </p>
               </div>
             </AnimateOnScroll>
@@ -240,7 +240,7 @@ export default function WhyUs() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
                 </svg>
               </div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">History & Audit Trail</h3>
+              <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">History &amp; Audit Trail</h3>
               <p className="text-xs sm:text-sm lg:text-base text-gray-600 leading-relaxed">
                 Complete log and audit trail for all email activities.
               </p>

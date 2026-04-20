@@ -70,7 +70,7 @@ export default function Security() {
     { name: "AES-256 Encryption", description: "Military-grade encryption standard" },
     { name: "RSA-4096 Keys", description: "Strong public-key cryptography" },
     { name: "Perfect Forward Secrecy", description: "New keys for each session" },
-    { name: "Zero-Knowledge Proof", description: "We can't access your data" },
+    { name: "Zero-Knowledge Proof", description: "We can&apos;t access your data" },
   ];
 
   return (
@@ -84,7 +84,7 @@ export default function Security() {
           <AnimateOnScroll animation="fadeInUp" delay={0}>
             <div className="text-center mb-0">
               <p className="text-xs sm:text-sm lg:text-base font-medium text-[#2C8DA1] mb-2 sm:mb-3 uppercase tracking-wide">
-                SECURITY & PRIVACY
+                SECURITY &amp; PRIVACY
               </p>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight">
                 Enterprise-Grade Security
@@ -247,7 +247,7 @@ export default function Security() {
                         Email Composed on Your Device
                       </h3>
                       <p className="text-sm sm:text-base text-gray-600">
-                        You write your email using scomm.ai. The message stays on your device until you're ready to send.
+                        You write your email using scomm.ai. The message stays on your device until you&apos;re ready to send.
                       </p>
                     </div>
                   </div>
@@ -312,11 +312,11 @@ export default function Security() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
-                        Decryption on Recipient's Device
+                        Decryption on Recipient&apos;s Device
                       </h3>
                       <p className="text-sm sm:text-base text-gray-600">
-                        The recipient's scomm.ai app automatically decrypts the email on their device. 
-                        If they don't use scomm.ai, they receive secure viewing instructions.
+                        The recipient&apos;s scomm.ai app automatically decrypts the email on their device. 
+                        If they don&apos;t use scomm.ai, they receive secure viewing instructions.
                       </p>
                     </div>
                   </div>

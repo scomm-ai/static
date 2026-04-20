@@ -9,7 +9,7 @@ export default function FAQsPage() {
       questions: [
         {
           question: "Will my existing emails be encrypted automatically?",
-          answer: "New emails you send and receive after installing scomm.ai will be automatically encrypted. Your existing email history remains in your original email provider's format. You can choose to encrypt and migrate old emails if needed."
+          answer: "New emails you send and receive after installing scomm.ai will be automatically encrypted. Your existing email history remains in your original email provider&apos;s format. You can choose to encrypt and migrate old emails if needed."
         },
         {
           question: "Can I use scomm.ai alongside my current email app?",
@@ -17,7 +17,7 @@ export default function FAQsPage() {
         },
         {
           question: "How long does it take to set up scomm.ai?",
-          answer: "Setup typically takes 5-10 minutes. You'll need to download the app, connect your email account, and configure your encryption preferences. The initial email sync may take longer depending on your mailbox size."
+          answer: "Setup typically takes 5-10 minutes. You&apos;ll need to download the app, connect your email account, and configure your encryption preferences. The initial email sync may take longer depending on your mailbox size."
         },
         {
           question: "Do I need technical knowledge to use scomm.ai?",
@@ -30,7 +30,7 @@ export default function FAQsPage() {
       questions: [
         {
           question: "Can recipients without scomm.ai read my encrypted emails?",
-          answer: "Yes, recipients without scomm.ai can still read your emails. They'll receive instructions on how to view the encrypted message securely through a web interface, or you can share a temporary access link."
+          answer: "Yes, recipients without scomm.ai can still read your emails. They&apos;ll receive instructions on how to view the encrypted message securely through a web interface, or you can share a temporary access link."
         },
         {
           question: "Does scomm.ai work with email aliases and forwarding?",
@@ -41,7 +41,7 @@ export default function FAQsPage() {
           answer: "Yes, scomm.ai can import your contacts and calendar events from Gmail, Outlook, and other providers during the initial setup process."
         },
         {
-          question: "Will scomm.ai work with my company's email server?",
+          question: "Will scomm.ai work with my company&apos;s email server?",
           answer: "scomm.ai works with standard IMAP/SMTP email servers. If your company uses custom authentication or special configurations, you may need to contact your IT department or our support team for assistance."
         }
       ]
@@ -55,7 +55,7 @@ export default function FAQsPage() {
         },
         {
           question: "Will scomm.ai slow down my computer or phone?",
-          answer: "scomm.ai is designed to be lightweight and efficient. Encryption and decryption happen quickly in the background. The on-device AI search may use some processing power during initial indexing, but it runs in the background and shouldn't noticeably impact performance."
+          answer: "scomm.ai is designed to be lightweight and efficient. Encryption and decryption happen quickly in the background. The on-device AI search may use some processing power during initial indexing, but it runs in the background and shouldn&apos;t noticeably impact performance."
         },
         {
           question: "How long does it take to search through my emails?",
@@ -76,7 +76,7 @@ export default function FAQsPage() {
         },
         {
           question: "What happens to my emails if I uninstall scomm.ai?",
-          answer: "Your emails remain in your original email provider (Gmail, Outlook, etc.). If you've stored encrypted backups, those remain accessible. Uninstalling scomm.ai doesn't delete your emails from your email provider."
+          answer: "Your emails remain in your original email provider (Gmail, Outlook, etc.). If you&apos;ve stored encrypted backups, those remain accessible. Uninstalling scomm.ai doesn&apos;t delete your emails from your email provider."
         },
         {
           question: "Can I export my emails from scomm.ai?",
@@ -96,20 +96,20 @@ export default function FAQsPage() {
       category: "Troubleshooting",
       questions: [
         {
-          question: "Why aren't my emails syncing?",
-          answer: "Check your internet connection first. If using offline mode, emails will sync when you're back online. Also verify your email account credentials are correct and that your email provider allows IMAP access."
+          question: "Why aren&apos;t my emails syncing?",
+          answer: "Check your internet connection first. If using offline mode, emails will sync when you&apos;re back online. Also verify your email account credentials are correct and that your email provider allows IMAP access."
         },
         {
           question: "I forgot my encryption password. Can you help?",
           answer: "We cannot recover your encryption password due to zero-knowledge architecture. However, if you set up a recovery key or backup, you can use that to regain access. Always keep your recovery options in a safe place."
         },
         {
-          question: "Emails are taking too long to send. What's wrong?",
+          question: "Emails are taking too long to send. What&apos;s wrong?",
           answer: "Encryption adds minimal overhead. If emails are slow, check your internet connection speed. Large attachments may take longer. You can also check if your email provider has sending limits that might be affecting delivery."
         },
         {
           question: "Can I use scomm.ai on multiple devices with the same account?",
-          answer: "Yes, you can use scomm.ai on multiple devices. You'll need to set up encryption on each device. Your emails will sync across devices if you've configured cloud storage or if you manually sync between devices."
+          answer: "Yes, you can use scomm.ai on multiple devices. You&apos;ll need to set up encryption on each device. Your emails will sync across devices if you&apos;ve configured cloud storage or if you manually sync between devices."
         }
       ]
     },
@@ -118,11 +118,11 @@ export default function FAQsPage() {
       questions: [
         {
           question: "Can I cancel my add-on subscriptions anytime?",
-          answer: "Yes, you can cancel your add-on subscriptions at any time. You'll continue to have access to the premium features until the end of your current billing period."
+          answer: "Yes, you can cancel your add-on subscriptions at any time. You&apos;ll continue to have access to the premium features until the end of your current billing period."
         },
         {
           question: "Do you offer discounts for students or non-profits?",
-          answer: "We offer educational and non-profit discounts. Contact our support team with proof of eligibility, and we'll provide information about available discounts."
+          answer: "We offer educational and non-profit discounts. Contact our support team with proof of eligibility, and we&apos;ll provide information about available discounts."
         },
         {
           question: "What payment methods do you accept?",
@@ -185,7 +185,7 @@ export default function FAQsPage() {
               Still have questions?
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-              Can't find what you're looking for? Our support team is ready to help.
+              Can&apos;t find what you&apos;re looking for? Our support team is ready to help.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-3.5 bg-[#2C8DA1] hover:bg-[#257a8d] text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base">

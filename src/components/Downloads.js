@@ -201,7 +201,7 @@ export default function Downloads() {
                   </svg>
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
-                  Free & Open Source
+                  Free &amp; Open Source
                 </h3>
                 <p className="text-sm sm:text-base text-gray-600">
                   scomm.ai is free to download and use. No hidden fees, no subscriptions required for basic features.

@@ -58,7 +58,7 @@ export default function SigninPage() {
                   </div>
                   <div>
                     <h3 className="text-base sm:text-lg font-medium text-gray-900 mb-1">Zero-Knowledge Architecture</h3>
-                    <p className="text-sm sm:text-base text-gray-600">We can't read your emails, even if we wanted to</p>
+                    <p className="text-sm sm:text-base text-gray-600">We can&apos;t read your emails, even if we wanted to</p>
                   </div>
                 </div>
 
@@ -181,7 +181,7 @@ export default function SigninPage() {
             {/* Sign Up Link */}
             <div className="text-center mt-5 sm:mt-6">
               <p className="text-sm text-gray-600">
-                Don't have an account?{" "}
+                Don&apos;t have an account?{" "}
                 <Link href="/signup" className="text-[#2C8DA1] hover:text-[#257a8d] font-medium transition-colors">
                   Sign up
                 </Link>
