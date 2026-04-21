@@ -57,12 +57,12 @@ export default function Footer() {
               <h3 className="text-xs sm:text-sm lg:text-base font-semibold text-gray-900 mb-3 sm:mb-4">Legal</h3>
               <ul className="space-y-2 sm:space-y-3">
                 <li>
-                  <Link href="/privacy-policy" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
+                  <Link href="https://public.scomm.ai/privacy.html" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms-of-service" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
+                  <Link href="https://public.scomm.ai/ToS.html" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
                     Terms of Service
                   </Link>
                 </li>
