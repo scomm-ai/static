@@ -24,7 +24,17 @@ export default function Pricing() {
 
   const addOns = [
     {
-      name: "Local AI",
+      name: "Linux Version",
+      price: "$5/year",
+      description: "Experience scomm.ai natively on your Linux distribution.",
+      icon: (
+        <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[#2C8DA1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+      )
+    },
+    {
+      name: "Local-AI",
       price: "$5/year",
       description: "On-device AI processing for smart email categorization and drafting without sending data to the cloud.",
       icon: (
@@ -36,7 +46,7 @@ export default function Pricing() {
     {
       name: "SComm Connect",
       price: "$5/year",
-      description: "Securely connect and synchronize with your favorite external services and workflows.",
+      description: "Securely connect and synchronize with your favorite external services and workflows (up to five devices per user).",
       icon: (
         <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[#2C8DA1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
@@ -44,12 +54,12 @@ export default function Pricing() {
       )
     },
     {
-      name: "Local Spam Filter",
+      name: "PGP Cryptography",
       price: "$5/year",
-      description: "Advanced on-device spam and phishing detection using targeted machine learning models.",
+      description: "Advanced encryption for your communications using industry-standard PGP.",
       icon: (
         <svg className="w-6 h-6 sm:w-7 sm:h-7 text-[#2C8DA1]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
         </svg>
       )
     }
@@ -159,7 +169,7 @@ export default function Pricing() {
             </div>
           </AnimateOnScroll>
 
-          <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-stretch">
             {addOns.map((addOn, index) => (
               <AnimateOnScroll key={index} animation="fadeInUp" delay={100 + (index * 100)}>
                 <div className="bg-white border-2 border-gray-200 rounded-2xl p-6 sm:p-8 h-full flex flex-col">
@@ -172,9 +182,15 @@ export default function Pricing() {
                   <p className="text-sm sm:text-base font-medium text-[#2C8DA1] mb-4">
                     {addOn.price}
                   </p>
-                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed flex-1 mb-6">
                     {addOn.description}
                   </p>
+                  <button className="w-full px-4 py-2.5 font-medium rounded-lg transition-all duration-300 text-sm sm:text-base bg-[#2C8DA1] hover:bg-[#023347] text-white shadow-md hover:shadow-xl mt-auto transform hover:-translate-y-1 flex justify-center items-center gap-2 cursor-pointer">
+                    Purchase
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                  </button>
                 </div>
               </AnimateOnScroll>
             ))}
