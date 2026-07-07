@@ -79,7 +79,7 @@ export default function Header() {
             <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-400"></span>
           </span>
           <span className="text-xs sm:text-sm font-medium tracking-wide text-gray-50">
-            Launch date: <span className="font-bold text-white">Monday 1st of June 2026</span>
+            Launch date: <span className="font-bold text-white">Monday 13th of July 2026</span>
           </span>
         </div>
       </div>
