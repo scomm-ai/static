@@ -2,6 +2,9 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/static' : '';
+
 export default function Features() {
   return (
     <>
@@ -169,10 +172,10 @@ export default function Features() {
             {/* Theme Images */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 max-w-5xl mx-auto">
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img src="/gmailtheme.png" alt="Gmail Theme" className="w-full h-auto object-cover" />
+                <img src={`${basePath}/gmailtheme.png`} alt="Gmail Theme" className="w-full h-auto object-cover" />
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
-                <img src="/outlooktheme.png" alt="Outlook Theme" className="w-full h-auto object-cover" />
+                <img src={`${basePath}/outlooktheme.png`} alt="Outlook Theme" className="w-full h-auto object-cover" />
               </div>
             </div>
           </AnimateOnScroll>

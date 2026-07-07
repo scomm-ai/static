@@ -2,6 +2,9 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 
+const isProd = process.env.NODE_ENV === 'production';
+const basePath = isProd ? '/static' : '';
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen sm:min-h-[90vh] md:min-h-fit max-h-screen flex items-start sm:items-center md:items-start px-4 sm:px-6 md:px-8 lg:px-8 overflow-hidden pt-28 max-[400px]:pt-28 sm:pt-28 md:pt-32 lg:pt-40 pb-12 sm:pb-16 md:pb-8 lg:pb-24 bg-[#F5F9FA]">
@@ -57,7 +60,7 @@ export default function Hero() {
               {/* Main Image Container */}
               <div className="relative w-full transform transition-smooth hover:scale-105">
                 <img 
-                  src="/scommio.png" 
+                  src={`${basePath}/scommio.png`} 
                   alt="Email Client Interface" 
                   className="relative w-full h-auto max-w-full object-contain drop-shadow-2xl"
                   style={{ maxHeight: '70vh' }}
