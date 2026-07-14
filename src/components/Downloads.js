@@ -117,7 +117,7 @@ export default function Downloads() {
                     Temporary Notice
                   </h3>
                   <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
-                    Download links will be made <span className="text-[#2C8DA1] font-semibold">live on our launch date:</span> Monday 13th of July 2026.
+                    Download links will be made <span className="text-[#2C8DA1] font-semibold">live on our launch date:</span> Saturday 1st of August 2026.
                   </p>
                 </div>
               </div>
