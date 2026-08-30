@@ -135,18 +135,18 @@ export default function FAQsPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <div className="pt-4 sm:pt-6">
+      <div className="pt-20 sm:pt-20 md:pt-22 overflow-x-hidden">
         {/* Hero Section */}
-        <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F5F9FA] to-white overflow-hidden">
+        <section className="relative py-8 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F5F9FA] to-white overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#2C8DA1]/5 rounded-full blur-3xl -z-10"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#023347]/5 rounded-full blur-3xl -z-10"></div>
           
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center mb-0">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight">
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#023347] mb-2 sm:mb-3 leading-tight px-1">
                 Frequently Asked Questions
               </h1>
-              <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed px-1">
                 Find quick answers to the most common questions about scomm.ai
               </p>
             </div>
@@ -154,23 +154,35 @@ export default function FAQsPage() {
         </section>
 
         {/* FAQs Section */}
-        <section className="relative pt-4 sm:pt-6 pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <section className="relative pt-2 sm:pt-6 pb-10 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-4xl mx-auto">
             {faqs.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="mb-12 sm:mb-16">
-                <h2 className="text-2xl sm:text-3xl font-semibold text-[#023347] mb-6 sm:mb-8">
+              <div key={categoryIndex} className="mb-8 sm:mb-12 lg:mb-16">
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-[#023347] mb-4 sm:mb-8">
                   {category.category}
                 </h2>
-                <div className="space-y-4 sm:space-y-6">
+                <div className="space-y-3 sm:space-y-4 lg:space-y-6">
                   {category.questions.map((faq, faqIndex) => (
-                    <div key={faqIndex} className="bg-[#F5F9FA] rounded-xl p-6 sm:p-8 border border-gray-200">
-                      <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
-                        {faq.question}
-                      </h3>
-                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                    <details
+                      key={faqIndex}
+                      className="group bg-[#F5F9FA] rounded-xl border border-gray-200 open:border-[#2C8DA1]/40 hover:border-[#2C8DA1]/50 transition-colors"
+                    >
+                      <summary className="cursor-pointer list-none flex items-start justify-between gap-3 p-4 sm:p-6 lg:p-8 text-base sm:text-lg lg:text-xl font-semibold text-gray-900 [&::-webkit-details-marker]:hidden">
+                        <span className="text-left leading-snug">{faq.question}</span>
+                        <svg
+                          className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#2C8DA1] transition-transform duration-200 group-open:rotate-180"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                      </summary>
+                      <p className="px-4 sm:px-6 lg:px-8 pb-4 sm:pb-6 lg:pb-8 -mt-1 sm:-mt-2 text-sm sm:text-base text-gray-600 leading-relaxed">
                         {faq.answer}
                       </p>
-                    </div>
+                    </details>
                   ))}
                 </div>
               </div>
@@ -179,19 +191,25 @@ export default function FAQsPage() {
         </section>
 
         {/* Contact Section */}
-        <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F9FA]">
+        <section className="relative py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[#F5F9FA]">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#023347] mb-4 sm:mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#023347] mb-3 sm:mb-6">
               Still have questions?
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
               Can&apos;t find what you&apos;re looking for? Our support team is ready to help.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-3.5 bg-[#2C8DA1] hover:bg-[#257a8d] text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto max-w-sm sm:max-w-none mx-auto">
+              <Link
+                href="/report-a-bug"
+                className="px-6 sm:px-8 py-3 sm:py-3.5 bg-[#2C8DA1] hover:bg-[#257a8d] active:bg-[#257a8d] text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg text-sm sm:text-base inline-block text-center"
+              >
                 Contact Support
-              </button>
-              <Link href="/help-center" className="px-8 py-3.5 border-2 border-[#2C8DA1] text-[#2C8DA1] hover:bg-[#2C8DA1] hover:text-white font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base inline-block text-center">
+              </Link>
+              <Link
+                href="/help-center"
+                className="px-6 sm:px-8 py-3 sm:py-3.5 border-2 border-[#2C8DA1] text-[#2C8DA1] hover:bg-[#2C8DA1] hover:text-white active:bg-[#2C8DA1] active:text-white font-semibold rounded-lg transition-all duration-300 text-sm sm:text-base inline-block text-center"
+              >
                 Visit Help Center
               </Link>
             </div>

@@ -82,7 +82,12 @@ export default function Footer() {
               <ul className="space-y-2 sm:space-y-3">
                 <li>
                   <Link href="/help-center" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
-                    Help Center
+                    Help Centre
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/report-a-bug" className="text-xs sm:text-sm lg:text-base text-gray-600 hover:text-[#2C8DA1] transition-colors">
+                    Report a Bug
                   </Link>
                 </li>
                 <li>
