@@ -7,7 +7,7 @@ export default function ReportABugPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <div className="pt-24 sm:pt-28 md:pt-32 overflow-x-hidden">
+      <div className="pt-24 sm:pt-28 md:pt-20 overflow-x-hidden">
         <section className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#F5F9FA] to-white overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-[#2C8DA1]/5 rounded-full blur-3xl -z-10"></div>
           <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#023347]/5 rounded-full blur-3xl -z-10"></div>
