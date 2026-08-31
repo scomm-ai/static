@@ -4,20 +4,20 @@ import HelpArticleContent from "@/components/help/HelpArticleContent";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
-  getHelpArticleBySlug,
-  getHelpArticles,
+  getHelpArticleOrStub,
   getHelpCategoryById,
+  getHelpStaticParams,
 } from "@/data/helpCentre";
 
-export function generateStaticParams() {
-  return getHelpArticles().map((article) => ({ slug: article.slug }));
+export async function generateStaticParams() {
+  return getHelpStaticParams();
 }
 
 export const dynamicParams = false;
 
 export default async function HelpArticlePage({ params }) {
   const { slug } = await params;
-  const article = getHelpArticleBySlug(slug);
+  const article = getHelpArticleOrStub(slug);
   if (!article) notFound();
 
   const category = getHelpCategoryById(article.categoryId);

@@ -12,6 +12,7 @@ export default function HelpArticleContent({ article }) {
         </p>
       ) : null}
 
+      {article.steps?.length ? (
       <ol className="space-y-8 sm:space-y-10">
         {article.steps.map((step, index) => (
           <li key={index} className="flex gap-4 sm:gap-5">
@@ -35,6 +36,7 @@ export default function HelpArticleContent({ article }) {
           </li>
         ))}
       </ol>
+      ) : null}
     </article>
   );
 }

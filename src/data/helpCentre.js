@@ -87,6 +87,44 @@ export function getHelpArticles() {
   return HELP_ARTICLES;
 }
 
+/** Params for static export. Must never be empty or `next build` fails. */
+export function getHelpStaticParams() {
+  const fromArticles = HELP_ARTICLES.map((article) => ({ slug: article.slug }));
+  if (fromArticles.length > 0) return fromArticles;
+
+  return HELP_CATEGORIES.flatMap((category) =>
+    (category.defaultArticleTitles || [])
+      .map((title) => slugifyHelpTitle(title))
+      .filter((slug) => slug !== "contact-support")
+      .map((slug) => ({ slug }))
+  );
+}
+
+export function getHelpArticleOrStub(slug) {
+  const article = getHelpArticleBySlug(slug);
+  if (article) return article;
+
+  for (const category of HELP_CATEGORIES) {
+    const title = (category.defaultArticleTitles || []).find(
+      (item) => slugifyHelpTitle(item) === slug
+    );
+    if (!title) continue;
+
+    return {
+      slug,
+      title,
+      categoryId: category.id,
+      summary: category.description,
+      intro:
+        "This article is coming soon. Check back shortly for a full walkthrough.",
+      steps: [],
+      comingSoon: true,
+    };
+  }
+
+  return null;
+}
+
 export function getHelpArticleBySlug(slug) {
   return HELP_ARTICLES.find((article) => article.slug === slug) ?? null;
 }
