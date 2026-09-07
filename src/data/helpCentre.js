@@ -1,17 +1,17 @@
 export const HELP_CENTRE_DUMMY_EMAIL = "alex.demo@scomm.ai";
 
 export const HELP_CATEGORIES = [
-  // {
-  //   id: "getting-started",
-  //   title: "Getting Started",
-  //   description: "Install the app, add your account, and send your first message.",
-  //   defaultArticleTitles: [
-  //     "How to install scomm.ai",
-  //     "Connecting your email account",
-  //     "Setting up encryption",
-  //     "First steps guide",
-  //   ],
-  // },
+  {
+    id: "getting-started",
+    title: "Getting Started",
+    description: "Install the app, add your account, and send your first message.",
+    defaultArticleTitles: [
+      "How to install scomm.ai",
+      "Connecting your email account",
+      "Setting up encryption",
+      "First steps guide",
+    ],
+  },
   {
     id: "account-settings",
     title: "Account & Settings",
@@ -268,6 +268,62 @@ export const HELP_ARTICLES = [
     ],
   },
   {
+    slug: "connecting-your-email-account",
+    title: "Connecting your email account",
+    categoryId: "getting-started",
+    summary:
+      "Add a Gmail, Microsoft, or IMAP mailbox in scomm.ai and switch between accounts.",
+    intro:
+      "Link your email so scomm.ai can sync your inbox on this device. You can connect Google, Microsoft work or school, Microsoft personal, or IMAP. Examples use alex.demo@scomm.ai — connect your own address for real mail.",
+    steps: [
+      {
+        title: "Open Switch account",
+        instruction:
+          "In the left sidebar, select your current account. The menu shows Switch account. Add account sits above all of your mailboxes — use it to link another inbox, or pick an account below to switch.",
+        image: {
+          src: "/help-centre/connecting-your-email-account/switch-account.png",
+          alt: "Switch account menu with Add account above the mailbox list and an active account checked",
+          caption: "Add account appears above all mailboxes in Switch account.",
+        },
+      },
+      {
+        title: "Choose Add account",
+        instruction:
+          "From that same menu, choose Add account (above the account list) to open the Add Account window.",
+        image: {
+          src: "/help-centre/connecting-your-email-account/add-account.png",
+          alt: "scomm.ai account menu with Switch account and Add account",
+          caption: "Choose Add account above your mailbox list.",
+        },
+      },
+      {
+        title: "Enter your mailbox address",
+        instruction:
+          "In the Add Account window, type your mailbox address. scomm.ai detects your provider when it can. You can still pick another sign-in method below.",
+        image: {
+          src: "/help-centre/connecting-your-email-account/add-account-modal.png",
+          alt: "Add Account window with mailbox address field and Continue with Google, Microsoft, or IMAP",
+          caption: "Add Account — continue with Google, Microsoft, or IMAP.",
+        },
+      },
+      {
+        title: "Continue with your provider",
+        instruction:
+          "Choose Continue with Google, Continue with work or school, Continue with Microsoft (Personal), or Continue with IMAP. Complete the sign-in or permission steps so scomm.ai can access that mailbox.",
+      },
+      {
+        title: "Wait for the first sync",
+        instruction:
+          "After the account is linked, scomm.ai starts syncing mail. Larger mailboxes can take longer the first time. You can keep using the app while sync runs.",
+      },
+      {
+        title: "Switch to another mailbox",
+        instruction:
+          "Open Switch account again. Your mailboxes appear under Add account. Select the one you want — a checkmark shows the active account. Folders and Compose use that mailbox.",
+      },
+    ],
+  },
+  {
     slug: "add-a-second-mailbox",
     title: "Add a second mailbox and switch between them",
     categoryId: "getting-started",
@@ -277,19 +333,34 @@ export const HELP_ARTICLES = [
       "scomm.ai can hold more than one mailbox. Add a second Gmail, Outlook, or Hotmail account, then switch accounts from the sidebar without leaving the app. Use a test address such as alex.demo@scomm.ai only in examples — connect your own accounts for real mail.",
     steps: [
       {
-        title: "Open Add account",
+        title: "Open Switch account",
         instruction:
-          "In the left sidebar, find your current account at the top. Directly under it, choose Add account.",
+          "In the left sidebar, open your account menu. Add account appears above all mailboxes. Choose Add account to link another inbox, or select a mailbox below to switch.",
         image: {
-          src: "/help-centre/add-a-second-mailbox/add-account.png",
-          alt: "scomm.ai sidebar showing the current account and Add account",
-          caption: "Choose Add account under your current mailbox.",
+          src: "/help-centre/connecting-your-email-account/switch-account.png",
+          alt: "Switch account menu with Add account above the mailbox list",
+          caption: "Add account sits above all accounts in the switch menu.",
+        },
+      },
+      {
+        title: "Choose Add account",
+        instruction:
+          "Select Add account at the top of the list to open the Add Account window.",
+        image: {
+          src: "/help-centre/connecting-your-email-account/add-account.png",
+          alt: "scomm.ai account menu with Switch account and Add account",
+          caption: "Choose Add account under Switch account.",
         },
       },
       {
         title: "Sign in to the second mailbox",
         instruction:
-          "Pick the provider (for example Gmail or Outlook) and complete the sign-in or permission steps. Approve access so scomm.ai can sync that inbox on this device.",
+          "In Add Account, enter the address and choose Continue with Google, Microsoft, or IMAP. Complete sign-in so scomm.ai can sync that inbox on this device.",
+        image: {
+          src: "/help-centre/connecting-your-email-account/add-account-modal.png",
+          alt: "Add Account window with provider buttons for Google, Microsoft, and IMAP",
+          caption: "Pick a provider to connect the second mailbox.",
+        },
       },
       {
         title: "Wait for the first sync",
@@ -299,7 +370,7 @@ export const HELP_ARTICLES = [
       {
         title: "Switch between mailboxes",
         instruction:
-          "Select the account name at the top of the sidebar to open the account list. Choose the mailbox you want. Folders (Inbox, Sent, Drafts, and the rest) update to that account.",
+          "Open Switch account again. Pick the mailbox under Add account. The checkmark marks the active account. Folders (Inbox, Sent, Drafts, and the rest) update to that account.",
       },
       {
         title: "Compose from the right account",
